@@ -19,7 +19,7 @@
  * @package    mahara
  * @subpackage artefact-learning
  * @author     Gregor Anzelj
- * @catalan translator Antonio Piedras Morente
+ * @catalan translator Antonio Piedras Morente //revisat per Joan Queralt Gil
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
  * @copyright  (C) 2009 Gregor Anzelj, gregor.anzelj@gmail.com
  *
@@ -30,17 +30,18 @@ defined('INTERNAL') || die();
 $string['pluginname'] = 'Learning';
 $string['mylearning'] = 'El meu aprenentatge';
 
-$string['learningsaved'] = 'Enquesta d\'estudis desada';
-$string['learningsavefailed'] = 'No s\'ha pogut actualitzar la seva enquesta d\'estudis';
+$string['learningsaved'] = 'S\'ha desat l\'Enquesta d\'aprenentatge';
+$string['learningsavefailed'] = 'No s\'ha pogut actualitzar la vostra enquesta d\'aprenentatge';
 
-$string['multipleintelligences'] = 'Múltiples intel·ligències';
+$string['multipleintelligences'] = 'Intel·ligències múltiples';
 $string['multipleintelligencesdesc'] = '
-<p>La teoria de les múltiples intel·ligències va ser desenvolupada l\'any 1983 pel Dr Howard Gardner. Que suggereix que la noció tradicional de la intel·ligència, basada en les proves de quocient intel·lectual, és massa limitada. En canvi, el Dr Gardner proposa set intel·ligències diferents per tenir en compte una gamma més àmplia del potencial humà tant en infants com en adults. A mitjans dels 90 Gardner va definir una vuitena intel·ligència. Aquestes intel·ligències són:
+<h1>Les intel·ligències múltiples</h1>
+<p>La teoria de les intel·ligències múltiples  va ser desenvolupada l\'any 1983 pel Dr Howard Gardner i suggereix que la noció tradicional de la intel·ligència, basada en les proves de quocient intel·lectual, és massa limitada. En canvi, el Dr Gardner proposa set intel·ligències diferents per tenir en compte una gamma més àmplia del potencial humà tant en infants com en adults. A mitjans dels 90 Gardner va definir una vuitena intel·ligència. Aquestes intel·ligències són:
 <ul>
 <li><b>Lingüística.</b> Capacitat per parlar o escriure.</li>
-<li><b>Lògica-Matemàtica.</b> Relacionada amb el pensament inductiu i deductiu i les habilitats per al raonament lògic, així com per l\'ús dels patrons de reconeixement numèric i abstracte.</li>
+<li><b>Lògico-Matemàtica.</b> Relacionada amb el pensament inductiu i deductiu i les habilitats per al raonament lògic, així com per l\'ús dels patrons de reconeixement numèric i abstracte.</li>
 <li><b>Visual-Espacial.</b> Capacitat per visualitzar mentalment objectes i dimensions espacials.</li>
-<li><b>Corporal-Kinésica.</b> Relacionada amb les sensacions corporals i la capacitat de controlar el moviment físic.</li>
+<li><b>Corporal-Cinèsica.</b> Relacionada amb les sensacions corporals i la capacitat de controlar el moviment físic.</li>
 <li><b>Musical-Rítmica.</b> Capacitat per dominar la música, així com els tons i els ritmes.</li>
 <li><b>Interpersonal.</b> Capacitat per comunicar-se eficaçment amb altres persones i ser capaços de desenvolupar relacions.</li>
 <li><b>Intrapersonal.</b> Capacitat per comprendre les pròpies emocions, les motivacions, els estats interns del propi ésser i l\'autoreflexió.</li>
@@ -48,14 +49,15 @@ $string['multipleintelligencesdesc'] = '
 </ul>
 </p>
 ';
-$string['learningstyles'] = 'Estils d\'aprentatge';
+$string['learningstyles'] = 'Estils d\'aprenentatge';
 $string['learningstylesdesc'] = '
-<p>Els estils d\'aprenentatge són els diferents enfocaments o modes d\'aprenentatge. Aquests impliquen mètodes educatius, per a un individu en particular, on se suposa que permeten que les persones aprenguin millor. Una de les categoritzacions més comunes i àmpliament utilitzades dels diferents tipus d\'estils d\'aprenentatge és el model de Fleming VARK (Visual Auditori Reading Kinesthetic) que es va ampliar a principis de la programació dels models neuro-lingüístics (VAK):
+<h1>Els estils d\'aprenentatge</h1>
+<p>Els estils d\'aprenentatge són els diferents enfocaments o modes d\'aprenentatge. Aquests impliquen als mètodes educatius, per a un individu en particular, perquè se suposa que permeten que les persones aprenguin millor. Una de les categoritzacions més comunes i àmpliament utilitzades dels diferents tipus d\'estils d\'aprenentatge és el model de Fleming VARK (Visual Auditori Reading Kinesthetic) que es va ampliar a principis de la programació dels models neuro-lingüístics (VAK):
 <ul>
-<li><b>Estudiants Visuals.</b> Ells tenen preferència per veure (pensar en imatges, ajudes visuals com ara diapositives, diagrames, fulls informatius, etc).</li>
-<li><b>Estudiants Auditius.</b> Ells aprenen millor escoltant (conferències, debats, àudio, etc).</li>
-<li><b>Estudiants de Lectura/Escriptura.</b> Ells aprenen millor amb activitats de lectura i escriptura.</li>
-<li><b>Estudiants Cinestètics</b> o <b>Tàctils.</b> Ells prefereixen aprendre a través de l\'experiència en moviment, tocar i fer (l\'exploració activa del món, els projectes de ciències, experiments, etc).</li>
+<li><b>Estudiants Visuals.</b> Tenen preferència per la visió (pensar en imatges, ajudes visuals com ara diapositives, diagrames, fulls informatius, etc).</li>
+<li><b>Estudiants Auditius.</b> Aprenen millor escoltant (conferències, debats, àudio, etc).</li>
+<li><b>Estudiants de Lectura/Escriptura.</b> Aprenen millor amb activitats de lectura i escriptura.</li>
+<li><b>Estudiants Cinèsics</b> o <b>Tàctils.</b> Prefereixen aprendre a través de l\'experiència del moviment, tocar i fer (l\'exploració activa del món, els projectes de ciències, experiments, etc).</li>
 </ul>
 </p>
 ';
@@ -67,7 +69,7 @@ $string['dateadded'] = 'Afegit el: ';
 $string['intelligenceA'] = 'Intel·ligència Verbal-Lingüística';
 $string['intelligenceB'] = 'Intel·ligència Lògico-Matemàtica';
 $string['intelligenceC'] = 'Intel·ligència Visual-Espacial';
-$string['intelligenceD'] = 'Intel·ligència Corporal-Cinestètica';
+$string['intelligenceD'] = 'Intel·ligència Corporal-Cinèsica';
 $string['intelligenceE'] = 'Intel·ligència Musical';
 $string['intelligenceF'] = 'Intel·ligència Interpersonal';
 $string['intelligenceG'] = 'Intel·ligència Intrapersonal';
@@ -120,7 +122,7 @@ $string['multipleintelligences.H4'] = 'M\'agrada aprendre sobre la natura, espec
 // Learning Styles
 $string['learningtypeV'] = 'Tipus Visual';
 $string['learningtypeA'] = 'Tipus Auditiu';
-$string['learningtypeK'] = 'Tipus Cinestètic';
+$string['learningtypeK'] = 'Tipus Cinèsic';
 $string['never'] = 'Mai';
 $string['rarely'] = 'Rarament';
 $string['sometimes'] = 'Algunes vegades';
@@ -129,7 +131,7 @@ $string['always'] = 'Sempre';
 
 // Learning Styles: Visual type
 $string['learningstyles.V01'] = 'A l\'aula mantinc contacte visual amb el professor';
-$string['learningstyles.V02'] = 'Utilitzo colors (llapisos, bolígrafs, etc.) tant en escriure en el quadern com en la lectura dels materials d\'aprenentatge.';
+$string['learningstyles.V02'] = 'Utilitzo colors (llapis, bolígrafs, etc.) tant en escriure en el quadern com en la lectura dels materials d\'aprenentatge.';
 $string['learningstyles.V03'] = 'Prefereixo el dibuix d\'un mapa més que l\'explicació de la manera de com arribar-hi.';
 $string['learningstyles.V04'] = 'Puc entendre i llegir fàcilment mapes, diagrames, gràfics, etc.';
 $string['learningstyles.V05'] = 'La ràdio encesa em molesta, si estic fent alguna cosa.';
