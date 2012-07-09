@@ -1,7 +1,7 @@
 <?php
 /**
  * Mahara: Electronic portfolio, weblog, resume builder and social networking
- * Copyright (C) 2006-2010 Catalyst IT Ltd and others; see:
+ * Copyright (C) 2006-2012 Catalyst IT Ltd and others; see:
  *                         http://wiki.mahara.org/Contributors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,9 +19,9 @@
  *
  * @package    mahara
  * @subpackage blocktype-mylanguages
- * @author     Gregor Anželj
+ * @author     Gregor Anzelj
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright  (C) 2009-2010 Gregor Anzelj, gregor.anzelj@gmail.com
+ * @copyright  (C) 2009-2012 Gregor Anzelj, gregor.anzelj@gmail.com
  *
  */
 
@@ -50,9 +50,8 @@ class PluginBlocktypeMyLanguages extends PluginBlocktype {
         $configdata = $bi->get('configdata');
 
         if (!empty($configdata['artefactid'])) {
-            require_once(get_config('docroot') . 'artefact/lib.php');
-            $mylanguages = artefact_instance_from_id($configdata['artefactid']);
-            return $mylanguages->get('title');
+            $artefacttype = $bi->get_artefact_instance($configdata['artefactid'])->get('artefacttype');
+			return get_string($artefacttype, 'artefact.europass');
         }
         return '';
     }
@@ -154,6 +153,7 @@ class PluginBlocktypeMyLanguages extends PluginBlocktype {
     }
 
 	// Ali je pravilno rewrite_language_config ali rewrite_europass_config?
+	/*
     public static function rewrite_language_config(View $view, $configdata) {
         $artefactid = null;
         if ($view->get('owner') !== null) {
@@ -169,6 +169,7 @@ class PluginBlocktypeMyLanguages extends PluginBlocktype {
         $configdata['artefactid'] = $artefactid;
         return $configdata;
     }
+	*/
 
     public static function default_copy_type() {
         return 'shallow';

@@ -1,7 +1,7 @@
 <?php
 /**
  * Mahara: Electronic portfolio, weblog, resume builder and social networking
- * Copyright (C) 2006-2010 Catalyst IT Ltd and others; see:
+ * Copyright (C) 2006-2012 Catalyst IT Ltd and others; see:
  *                         http://wiki.mahara.org/Contributors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,24 +17,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package	mahara
- * @subpackage	artefact-europass
- * @author		Gregor Anželj
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright	(C) 2009-2010 Gregor Anzelj, gregor.anzelj@gmail.com
+ * @package    mahara
+ * @subpackage artefact-europass
+ * @author     Gregor Anzelj
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
+ * @copyright  (C) 2009-2012 Gregor Anzelj, gregor.anzelj@gmail.com
  *
- * @package	Europass Online Tools Labels and Help texts
- * @purpose	Provides the labels and help texts used in the Europass Online Tools.
- * @author(s)	Europass team
- * @copyright	(C) European Communities, 2002-2009 http://europass.cedefop.europa.eu
- * @license		http://europass.cedefop.europa.eu/europass/home/botnav/LegalNotice.csp
- * @version		20090407
- * @URL		http://europass.cedefop.europa.eu/TechnicalResources/EuropassLabels/xforms/europass-labels-xforms-20090407/cv_hu_HU.xhtml
- * @URL		http://europass.cedefop.europa.eu/TechnicalResources/EuropassLabels/xforms/europass-labels-xforms-20090407/lp_hu_HU.xhtml
+ * @translator Geza Gemes
  *
- * ISO 639-1		http://europass.cedefop.europa.eu/xml/EUROPASS_ISOLanguages_V1.1.xsd
- * ISO 3166-1		http://europass.cedefop.europa.eu/xml/EUROPASS_ISOCountries_V1.1.xsd
- * List of nationalities	http://europass.cedefop.europa.eu/TechnicalResources/XML/xsd/included_schemas/EUROPASS_Nationalities_V1.0.xsd
+ * @package    Europass Online Tools Labels and Help texts
+ * @purpose    Provides the labels and help texts used in the Europass Online Tools.
+ * @author(s)  Europass team
+ * @copyright  (C) European Communities, 2002-2011 http://europass.cedefop.europa.eu
+ * @license    http://europass.cedefop.europa.eu/europass/home/botnav/LegalNotice.csp
+ * @version    20110907
+ * @URL        http://europass.cedefop.europa.eu/TechnicalResources/EuropassLabels/xforms/europass-labels-xforms-20110907/cv_en_GB.xhtml
+ * @URL        http://europass.cedefop.europa.eu/TechnicalResources/EuropassLabels/xforms/europass-labels-xforms-20110907/lp_en_GB.xhtml
+ *
+ * ISO 639-1   http://europass.cedefop.europa.eu/xml/EUROPASS_ISOLanguages_V1.1.xsd
+ * ISO 3166-1  http://europass.cedefop.europa.eu/xml/EUROPASS_ISOCountries_V1.1.xsd
+ * List of nationalities  http://europass.cedefop.europa.eu/TechnicalResources/XML/xsd/included_schemas/EUROPASS_Nationalities_V1.0.xsd
  *(based on ISO 3166-1)
  */
 
@@ -43,38 +45,49 @@ defined('INTERNAL') || die();
 $string['pluginname'] = 'Europass';
 
 $string['europass'] = 'Europass';
-/**/$string['europassartefactsaved'] = 'Europass curriculum vitae saved sucessfully';
-/**/$string['europassexportgenerated'] = 'Please wait while your export is being generated...';
-/**/$string['europassexportnoconncetion'] = 'There was an error with connection to WSDL server. Please try again later.';
-/**/$string['europassexportservererror'] = 'There was an error on WSDL server. Please try again later.';
-/**/$string['europassextensionmissing'] = 'Sorry, you cannot use Europass plugin because your PHP installation is missing required extension:';
-/**/$string['newerversionforcompatibility'] = 'For better performance and compatibility you should upgrade to Mahara version 1.3.0 or newer.';
+$string['europassartefactsaved'] = 'Az Europass önéletrajz (CV) sikeresen mentve';
+$string['europassexportgenerated'] = 'Kérem várjon míg az export létrehozása tart...';
+$string['europassexportnoconncetion'] = 'Hiba történt a WSDL szerverhez való kapcsolódás közben. Kérem próbálja meg később újra.';
+$string['europassexportservererror'] = 'Hiba lépett fel a WSDL szerveren. Kérem próbálja meg később újra.';
+$string['europassextensionmissing'] = 'Sajnos Ön nem használhatja az Europass plugint, mivel az Ön PHP telepítéséből hiányoznak a szükséges bővítmények:';
+$string['newerversionforcompatibility'] = 'A jobb teljesítmény és kompatibilitás érdekében frissítenie kell a Mahara verzióját 1.3.0-ra vagy újabbra.';
 
-/**/$string['languagesaved'] = 'Language saved sucessfully';
-/**/$string['languagesavefailed'] = 'Failed to save language';
-/**/$string['languagedeleteconfirm'] = 'Are you sure you want to delete this language?';
-/**/$string['languagedeleted'] = 'Language deleted sucessfully';
+$string['languagesaved'] = 'Nyelv sikeresen mentve';
+$string['languagesavefailed'] = 'Nem sikerült a nyelv mentése';
+$string['languagedeleteconfirm'] = 'Biztosan törölni akarja ezt a nyelvet?';
+$string['languagedeleted'] = 'Nyelv sikeresen törölve';
 
-/**/$string['moveup'] = 'Move up';
-/**/$string['movedown'] = 'Move down';
+$string['moveup'] = 'Mozgatás feljebb';
+$string['movedown'] = 'Mozgtás lejebb';
+
+$string['languagediploma'] = 'Nyelvvizsga';
+$string['languageexperience'] = 'Nyelvtapasztalat';
+$string['languagediplomadeleteconfirm'] = 'Biztosan törölni akarja ezt a nyelvvizsgát?';
+$string['languageexperiencedeleteconfirm'] = 'Biztosan törölni akarja ezt a nyelvtapasztalatot?';
+$string['languagediplomadeleted'] = 'Nyelvvizsga sikeresen törölve';
+$string['languageexperiencedeleted'] = 'Nyelvtapasztalat sikeresen törölve';
+$string['languagediplomasaved'] = 'Nyelvvizsga sikeresen mentve';
+$string['languagediplomasavefailed'] = 'Nem sikerült menteni a nyelvvizsgát';
+$string['languageexperiencesaved'] = 'Nyelvtapasztalat sikeresen mentve';
+$string['languageexperiencesavefailed'] = 'Nem sikerült menteni a nyelvtapasztalatot';
 
 // Export data from Mahara to Europass form...
-/**/$string['exporteuropass'] = 'Export Europass';
-/**/$string['exportstep1'] = '1 - Document language and type';
-/**/$string['selectlocale&type'] = 'Select document language and type';
-/**/$string['selectlocale'] = 'Language';
-/**/$string['selectlocaledesc'] = 'Europass document language';
-/**/$string['selectdocumenttype'] = 'Document';
+$string['exporteuropass'] = 'Europass Export ';
+$string['exportstep1'] = '1 - Dokumentum nyelve és típusa';
+$string['selectlocale&type'] = 'Válassza ki a dokumentum nyelvét és típusát';
+$string['selectlocale'] = 'Nyelv';
+$string['selectlocaledesc'] = 'Europass dokuemntum nyelve';
+$string['selectdocumenttype'] = 'Dokumentum';
 $string['europassCV'] = 'Europass önéletrajzot (CV)';
 $string['europassLP'] = 'Europass nyelvi útlevelet';
 $string['photograph'] = 'Fénykép';
-/**/$string['photographdesc'] = 'Photo will be embeded in Europass XML';
-/**/$string['phototoolarge'] = 'File too big. Filesize must not exceed 100 kB.';
-/**/$string['exportstep2'] = '2 - Document format';
-/**/$string['selectfiletype'] = 'Select file and date format';
-/**/$string['exportdate'] = 'Date';
-/**/$string['internaldateformat'] = 'Internal Date Format';
-/**/$string['selectinternaldatedesc'] = 'Date format used in Mahara';
+$string['photographdesc'] = 'A fotó beágyazásra kerül az Europass XML-be';
+$string['phototoolarge'] = 'Túl nagy fájl. A fájl mérete nem lehet nagyobb 100 kB-nál.';
+$string['exportstep2'] = '2 - Dokumentum formátuma';
+$string['selectfiletype'] = 'Válassza ki a fájl és a dátum formáját';
+$string['exportdate'] = 'Dátum';
+$string['internaldateformat'] = 'Belső Dátum Forma';
+$string['selectinternaldatedesc'] = 'A Mahara által használt dátumforma';
 $string['internaldate-dmy11'] = 'nn/hh/éééé';
 $string['internaldate-dmy12'] = 'nn.hh.éééé';
 $string['internaldate-dmy13'] = 'nn-hh-éééé';
@@ -94,25 +107,54 @@ $string['internaldate-ymd21'] = 'éé/hh/nn';
 $string['internaldate-ymd22'] = 'éé.hh.nn';
 $string['internaldate-ymd23'] = 'éé-hh-nn';
 $string['internaldate-yonly'] = 'éééé';
-/**/$string['internaldate-other'] = 'other';
-/**/$string['externaldateformat'] = 'External Date Format';
-/**/$string['selectexternaldatedesc'] = 'Date format used in export';
+$string['internaldate-other'] = 'más';
+$string['externaldateformat'] = 'Külső dátum forma';
+$string['selectexternaldatedesc'] = 'Az exportálásnál használt dátumforma';
 $string['externaldate-numeric-long'] = 'nn/hh/éééé';
 $string['externaldate-text-long'] = 'nn. hónap éééé';
-/**/$string['exportfile'] = 'File';
+$string['exportfile'] = 'Fájl';
 $string['pdf'] = 'Adobe® PDF + XML';
+$string['pdfhrxml'] = 'Adobe® PDF + HR-XML';
 $string['doc'] = 'Microsoft® Word';
 $string['odt'] = 'OpenDocument';
 $string['html'] = 'HTML';
+$string['json'] = 'Europass JSON';
 $string['xml'] = 'Europass XML';
-/**/$string['exportstep3'] = '3 - Export';
-/**/$string['generate'] = 'Generate export';
-/**/$string['generateexport'] = 'Export';
+$string['hrxml'] = 'HR-XML';
+$string['exportstep3'] = '3 - Export';
+$string['generate'] = 'Export létrehozása';
+$string['generateexport'] = 'Export';
+
+// Import data from Europass XML to Mahara...
+$string['importeuropass'] = 'Europass Import';
+$string['importstep1'] = '1 - Import fájl és opciók';
+$string['selectfile&options'] = 'Europass XML fájl feltöltése és importálási opciók beállítása';
+$string['importstep2'] = '2 - Import';
+$string['execute'] = 'Import végrehajtása';
+$string['executeimport'] = 'Import';
+$string['importfile'] = 'Europass XML fájl';
+$string['importfiledesc'] = 'Válasszon ki egy érvényes Europass XML fájlt a Mahara-ba való importáláshoz';
+$string['notvalidxmlfile'] = 'A feltöltött fájl nem érvényes XML fájl.';
+$string['importoptions'] = 'Mit importáljon?';
+$string['importoptionsdesc'] = 'A zárolt profilemzők nem lesznek módosítva/frissítve';
+$string['nocheckedoptions'] = 'Legalább egy opciót ki kell választania az importhoz.';
+$string['fieldnotimported'] = 'A "%s" mező nem került importálásra.';
+$string['lockedfieldnotimported'] = 'A "%s" zárolt mező nem került importálásra.';
+$string['languagecodemissing'] = 'A "%s" mező  nem került importálásra. A nyelvi kód hiányzik.';
+$string['importdate'] = 'A dátumok importálva mint';
+$string['europassimportexecuted'] = 'Az adatok sikeresen importálva a Mahara-ba az Europass XML fájlból.';
+
+// Europass GUI form tabs
+$string['application-tab'] = 'Jelentkezés';
+$string['workexperience-tab'] = 'Munka';
+$string['education-tab'] = 'Oktatás';
+$string['languages-tab'] = 'Nyelvek';
+$string['skills-tab'] = 'Készségek';
 
 // Europass CV - STEP 1
 $string['identification'] = 'Személyes információk';
 $string['identification-birthdate'] = 'Születési dátum';
-/**/$string['identification-birthplace'] = 'Születési hely';
+$string['identification-birthplace'] = 'Születési hely';
 $string['identification-lastname'] = 'Vezetéknév (nevek)';
 $string['identification-firstname'] = 'Utónév (nevek)';
 $string['identification-addressLine'] = 'Utca, házszám';

@@ -1,7 +1,7 @@
 <?php
 /**
  * Mahara: Electronic portfolio, weblog, resume builder and social networking
- * Copyright (C) 2006-2009 Catalyst IT Ltd and others; see:
+ * Copyright (C) 2006-2012 Catalyst IT Ltd and others; see:
  *                         http://wiki.mahara.org/Contributors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,10 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package    mahara
- * @subpackage blocktype-resumefield
- * @author     Catalyst IT Ltd
+ * @subpackage blocktype-europassfield
+ * @author     Gregor Anzelj
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright  (C) 2006-2009 Catalyst IT Ltd http://catalyst.net.nz
+ * @copyright  (C) 2009-2012 Gregor Anzelj, gregor.anzelj@gmail.com
  *
  */
 
@@ -49,9 +49,8 @@ class PluginBlocktypeEuropassfield extends PluginBlocktype {
         $configdata = $bi->get('configdata');
 
         if (!empty($configdata['artefactid'])) {
-            require_once(get_config('docroot') . 'artefact/lib.php');
-            $europassfield = artefact_instance_from_id($configdata['artefactid']);
-            return $europassfield->get('title');
+            $artefacttype = $bi->get_artefact_instance($configdata['artefactid'])->get('artefacttype');
+			return get_string($artefacttype, 'artefact.europass');
         }
         return '';
     }
@@ -81,11 +80,25 @@ class PluginBlocktypeEuropassfield extends PluginBlocktype {
         // Get data about the resume field in this blockinstance
         if (!empty($configdata['artefactid'])) {
             $europassfield = $instance->get_artefact_instance($configdata['artefactid']);
-            $rendered = $europassfield->render_self($configdata);
-            $result = $rendered['html'];
-            if (!empty($rendered['javascript'])) {
-                $result .= '<script type="text/javascript">' . $rendered['javascript'] . '</script>';
-            }
+			if ($europassfield->get('artefacttype') != 'application') {
+				$rendered = $europassfield->render_self($configdata);
+				$result = $rendered['html'];
+				if (!empty($rendered['javascript'])) {
+					$result .= '<script type="text/javascript">' . $rendered['javascript'] . '</script>';
+				}
+			} else {
+				require_once(get_config('docroot') . 'artefact/europass/lib/locale.php');
+				$personalinformation = null;
+				try { $personalinformation = artefact_instance_from_type('personalinformation'); }
+				catch (Exception $e) { }
+				if (!empty($personalinformation)) {
+					$gender = $personalinformation->get_composite('gender');
+				} else {
+					$gender = null;
+				}
+				$occupation = get_occupation($europassfield->get('description'), get_config('lang'), $gender);
+				$result = $occupation['label'];
+			}
             return $result;
         }
         return '';
@@ -141,6 +154,7 @@ class PluginBlocktypeEuropassfield extends PluginBlocktype {
         return '';
     }
 
+	/*
     public static function rewrite_resume_config(View $view, $configdata) {
         $artefactid = null;
         if ($view->get('owner') !== null) {
@@ -156,6 +170,7 @@ class PluginBlocktypeEuropassfield extends PluginBlocktype {
         $configdata['artefactid'] = $artefactid;
         return $configdata;
     }
+	*/
 
     public static function default_copy_type() {
         return 'shallow';
