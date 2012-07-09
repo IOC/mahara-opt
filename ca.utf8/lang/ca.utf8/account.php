@@ -1,0 +1,47 @@
+<?php
+
+defined('INTERNAL') || die();
+
+$string['accountdeleted'] = 'S\'ha eliminat el vostre compte.';
+$string['accountoptionsdesc'] = 'Aquí podeu configurar les opcions generals del compte';
+$string['changepassworddesc'] = 'Escriviu aquí la vostra informació si voleu canviar la contrasenya';
+$string['changepasswordotherinterface'] = 'Podeu  <a href="%s">canviar la contrasenya</a> des d\'una altra interfície</a>';
+$string['changeusername'] = 'Nou nom d\'usuari';
+$string['changeusernamedesc'] = 'El nom d\'usuari que usareu per entrar a %s.  Els noms d\'usuari han de tenir entre 3 i 30 caràcters i poden contenir lletres, xifres i els símbols més comuns, tret de l\'espai en blanc.';
+$string['changeusernameheading'] = 'Canvi de nom d\'usuari';
+$string['deleteaccount'] = 'Elimina el compte';
+$string['deleteaccountdescription'] = 'Si elimineu el vostre propi compte els altres usuaris ja no podran veure ni la vostra informació del perfil ni les vistes. Tanmateix les entrades de fòrum que haguéssiu pogut fer encara es veuran però sense el nom de l\'autor.';
+$string['disabled'] = 'Deshabilitat';
+$string['disableemail'] = 'Desactiva el correu electrònic';
+$string['enabled'] = 'Habilitat';
+$string['enablemultipleblogs'] = 'Activa més d\\un Diari';
+$string['enablemultipleblogsdescription'] = 'Per defecte teniu un Diari. Si en voleu més d\'un marqueu aquesta opció.';
+$string['friendsauth'] = 'Els amics nous necessiten la meva autorització';
+$string['friendsauto'] = 'Els amics nous són autoritzats automàticament';
+$string['friendsdescr'] = 'Control d\'amics';
+$string['friendsnobody'] = 'Ningú no em podrà afegir com amic';
+$string['hiderealname'] = 'Amaga el nom real';
+$string['hiderealnamedescription'] = 'Marqueu aquesta opció si heu triat mostrar un altre nom i no voleu que altres usuaris us puguin trobar pel nom real quan facin una cerca.';
+$string['language'] = 'Idioma';
+$string['maildisabled'] = 'Correu electrònic deshabilitat';
+$string['maildisabledbounce'] = 'S\\\'ha deshabilitat l\\\'enviament de missatges a la vostra bústia de correu electrònic perquè eren retornats al servidor. Comproveu que el vostre correu electrònic està funcionant correctament abans de tornar a habilitar aquesta opció a les vostres preferències.';
+$string['maildisableddescription'] = 'S\'ha deshabilitat l\'enviament de missatges a la vostra bústia de correu electrònic. Podeu <a href="%s">tornar a habilitar el correu</a> des de la pàgina de preferències del compte.';
+$string['messagesallow'] = 'Permet que tothom m\'enviï missatges';
+$string['messagesdescr'] = 'Missatges d\'altres usuaris';
+$string['messagesfriends'] = 'Permet que només les persones de la llista d\'Amics m\'enviïn missatges';
+$string['messagesnobody'] = 'No permetis que ningú m\'enviï missatges';
+$string['mobileuploadtoken'] = 'Token per la càrrega des del Mòbil';
+$string['mobileuploadtokendescription'] = 'Escriviu el token aquí i al telèfon mòbil per activar les càrregues <br /><b>Nota</b>: canviarà de forma automàtica després de cada càrrega <br/> Si teniu problemes - simplement restabliu-lo aquí i al telèfon.';
+$string['off'] = 'Desactivat';
+$string['oldpasswordincorrect'] = 'Aquesta no és la contrasenya actual';
+$string['on'] = 'Activat';
+$string['prefsnotsaved'] = 'No s\'han pogut desar les preferències!';
+$string['prefssaved'] = 'S\'han desat les preferències';
+$string['showhomeinfo1'] = 'Informació de la pàgina d\'inici';
+$string['showhomeinfodescription'] = 'Mostra la informació sobre con usar % a la pàgina d\'inici';
+$string['showviewcolumns'] = 'Quan editi un Pàgina mostra els controls per afegir o treure columnes';
+$string['tagssideblockmaxtags'] = 'Nombre màxim d\'etiquetes al núvol';
+$string['tagssideblockmaxtagsdescription'] = 'Nombre màxim d\'etiquetes per mostrar al vostre Núvol d\'etiquetes';
+$string['updatedfriendcontrolsetting'] = 'Actualitza el control d\'amics';
+$string['usernameexists'] = 'Aquest nom d\'usuari  ja existeix. Trieu-ne un altre.';
+$string['wysiwygdescr'] = 'Editor HTML';
