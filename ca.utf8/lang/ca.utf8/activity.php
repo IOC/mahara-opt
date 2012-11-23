@@ -98,5 +98,5 @@ $string['typevirusrepeat'] = 'Càrrega repetida per virus';
 $string['typewatchlist'] = 'Llista de seguiment';
 $string['unread'] = 'No llegit';
 $string['viewmodified'] = 'ha canviat la seva pàgina';
-$string['viewsubmittedmessage'] = '%s ha enviat la seva Pàgina "%s" a %s';
-$string['viewsubmittedsubject'] = 'Pàgina enviada a %s';
+$string['viewsubmittedmessage1'] = '%s ha presentat "%s" a %s';
+$string['viewsubmittedsubject1'] = 'Presentació a %s';

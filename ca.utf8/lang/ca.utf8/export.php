@@ -19,6 +19,7 @@ $string['exportingfooter'] = 'S\'està exportant el peu';
 $string['exportingviews'] = 'S\'estan exportant les pàgines';
 $string['exportingviewsprogress'] = 'S\'estan exportant les pàgines: %s/%s';
 $string['exportportfoliodescription'] = 'Aquesta eina exporta tota la informació i les pàgines del vostre portafolis. Però no exporta la configuració del contingut que hagueu carregat ni els grups creats.';
+$string['exportyourportfolio'] = 'Exporteu el vostre ePortafolis';
 $string['generateexport'] = 'Exporta';
 $string['includefeedback'] = 'Inclou les retroaccions d\'usuari';
 $string['includefeedbackdescription'] = 'Al fitxer HTML d\'exportació s\'hi inclouran tots les comentaris d\'usuari';

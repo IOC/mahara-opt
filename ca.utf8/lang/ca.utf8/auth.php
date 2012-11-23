@@ -4,7 +4,7 @@ defined('INTERNAL') || die();
 
 $string['addauthority'] = 'Afegeix una autoritat';
 $string['application'] = 'Aplicació';
-$string['authloginmsg'] = 'Escriviu el missatge que es mostrarà quan l\\\'usuari intenti registrar-se des del formulari de Mahara';
+$string['authloginmsg2'] = 'Si no heu triat una autoritat parental, escriviu aquí el missatge que es mostrarà quan un usuari intenti registrar-se a través del formulari d\'accés de Mahara.';
 $string['authname'] = 'Nom de l\'autoritat';
 $string['cannotjumpasmasqueradeduser'] = 'No podeu saltar a l\'altra aplicació mentre utilitzeu l\'opció "Entra com" un altre usuari.';
 $string['cannotremove'] = 'No es pot esborrar aquest connector d\\\'autenticació perquè és l\'únic connector que té aquesta institució.';

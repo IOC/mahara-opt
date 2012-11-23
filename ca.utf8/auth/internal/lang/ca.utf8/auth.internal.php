@@ -2,6 +2,25 @@
 
 defined('INTERNAL') || die();
 
+$string['approvalemailmessagehtml'] = '<p>Benvolgut/da %s,</p>
+
+<p>Gràcies per enviar la sol·licitud d\'un compte a %s. 
+Se n\'ha informat a l\'administrador de la institució.
+Molt aviat rebreu un correu amb la resolució de la vostra sol·licitud.</p>
+
+<pre>--
+Salutacions,
+L\'equip  %s</pre>';
+$string['approvalemailmessagetext'] = 'Benvolgut/da %s,
+
+Gràcies per enviar la sol·licitud d\'un compte a %s. 
+Se n\'ha informat a l\'administrador de la institució.
+Molt aviat rebreu un correu amb la resolució de la vostra sol·licitud.
+
+--
+Salutacions,
+L\'equip  %s';
+$string['approvalemailsubject'] = 'S\'ha rebut la sol·licitud de registre a %s';
 $string['completeregistration'] = 'Completeu el registre';
 $string['confirmcancelregistration'] = 'Esteu segurs que voleu cancel·lar el registre? Fent això la vostra petició s\'eliminarà del sistema.';
 $string['confirmemailsubject'] = 'Confirmeu el correu de registre a %s';
@@ -10,9 +29,41 @@ $string['emailalreadytaken'] = 'Aquesta adreça de correu ja ha estat registrada
 $string['emailconfirmedok'] = '<p>Heu confirmat el correu de registre amb èxit. Molt aviat us notificarem més detalls del registre. </p>';
 $string['iagreetothetermsandconditions'] = 'Estic d\'acord amb els Termes i Condicions';
 $string['internal'] = 'Interna';
-$string['passwordformdescription'] = 'La contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres';
-$string['passwordinvalidform'] = 'La vostra contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres';
+$string['passwordformdescription'] = 'La vostra contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres.<br />
+Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
+$string['passwordinvalidform'] = 'La vostra contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres.<br />
+Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
+$string['pendingregistrationadminemailhtml'] = '<p>Benvolgut/da %s,</p>
+<p>Un usuari nou ha sol·licitat unir-se a la institució \'%s\'.</p>
+<p>Com que esteu a la llista d\'administradors d\'aquesta institució cal que aproveu o denegueu la sol·licitud. Per fer-ho seguiu l\'enllaç següent:  <a href=\'%s\'>%s</a></p>
+<p>Teniu un termini màxim de 2 setmanes per aprovar o denegar la sol·licitud.</p>
+<p>Els detalls de la sol·licitud de registre són aquests:</p>
+<p>Nom: %s</p>
+<p>Email: %s</p>
+<p>Raó per fer la sol·licitud:</p>
+<p>%s</p>
+<pre>--
+Salutacions,
+L\'equip %s</pre>';
 $string['pendingregistrationadminemailsubject'] = 'Registre d\'un nou usuari de la institució \'%s\' a %s.';
+$string['pendingregistrationadminemailtext'] = 'Hola %s,
+
+Un nou usuari ha presentat la sol·licitud per unir-se a la institució \'%s\'.
+
+Com que vós sou a la llista d\'administradors d\'aquesta institució cal que aproveu o denegueu la sol·licitud de registre. Per fer-ho seleccioneu l\'enllaç següent: %s
+
+Heu d\'aprovar o denegar la sol·licitud en un termini de 2 setmanes.
+
+Aquests són els detalls de la sol·licitud:
+
+Nom: %s
+Correu electrònic: %s
+Raó per registrar-se:
+%s
+
+--
+Salutacions,
+L\'equip %s';
 $string['registeredemailmessagehtml'] = '<p>Hola %s,</p>
 <p>Gràcies per registrar-vos a %s. Si us plau, seguiu aquest enllaç per
 completar el procés de registre:</p>
@@ -32,7 +83,7 @@ Salutacions,
 L\'equip de %s';
 $string['registeredemailsubject'] = 'Us heu registrat a %s';
 $string['registeredok'] = '<p>Us heu registrat correctament. Si us plau, comproveu el vostre correu electrònic per trobar instruccions sobre el procés d\'activació del vostre compte</p>';
-$string['registeredokawaitingemail'] = 'Heu enviat amb èxit la vostra sol·licitud de registre. Rebreu un correu electrònic per tal de confirmar l\'adreça de correu i continuar el procés.';
+$string['registeredokawaitingemail2'] = 'Hem rebut correctament la vostra sol·licitud de registre. Se n\'ha informat a l\'administrador de la institució i molt aviat rebreu un correu amb la resolució de la vostra sol·licitud.';
 $string['registrationcancelledok'] = 'Heu cancel·lat amb èxit la vostra sol·licitud de registre.';
 $string['registrationconfirm'] = 'Confirmeu el registre?';
 $string['registrationconfirmdescription'] = 'Els adminsitradors de la institució han d\'aprovar el registre.';
@@ -52,7 +103,7 @@ Salutacions cordials
 %s';
 $string['registrationnosuchkey'] = 'Sembla que no hi ha cap registre amb aquesta clau. Potser heu trigat més de 24 hores en completar el registre. En un altre cas es deu haver produït un error.';
 $string['registrationreason'] = 'Motiu del registre';
-$string['registrationreasondesc'] = 'El motiu pel qual demaneu el registre amb la institució triada i altres detalls que penseu puguen ajudar a l\'administrador en el procés de sol·licitud. El registre no pot completar-se sense aquesta informació.';
+$string['registrationreasondesc1'] = 'La raó per la qual presenteu la sol·licitud d\'inscripció a la institució triada i qualsevol altre detall que considereu que pugui ser útil per l\'administrador en la tramitació de la vostra sol.licitud.';
 $string['registrationunsuccessful'] = 'Lamentablement el vostre intent de registre ha fallat a causa d\'un error al nostre sistema. Si us plau, proveu-ho més tard.';
 $string['title'] = 'Interna';
 $string['usernamealreadytaken'] = 'Aquest nom d\'usuari ja està en ús.';

@@ -62,6 +62,10 @@ $string['adminuserspagedescription'] = '<p>Aquí podeu escollir quins usuaris s�
 $string['adminusersupdated'] = 'S\'han actualitzat els usuaris administradors';
 $string['advanced'] = 'Advançat';
 $string['all'] = 'Tot';
+$string['allowediframesites'] = 'Fonts amb etiqueta iframe permeses';
+$string['allowediframesitesdescription'] = 'Els usuaris poden incrustar contingut dels següents llocs externs a les seves pàgines, dins dels elements d\'HTML &lt;iframe&gt; . Normalment, això s\'utilitza per a la visualització de vídeos allotjats en altres llocs. En aquesta pàgina es pot modificar la llista de llocs permesos.';
+$string['allowediframesitesdescriptiondetail'] = 'Els usuaris visualitzaran la icona i el nom que es mostra quan configurin un bloc extern multimèdia. Tots els llocs amb el mateix nom  s\'agrupen al formulari de configuració, però el text d\'origen d\' iframe ha de concordar amb qualsevol dels llocs  permesos.';
+$string['allowediframesitesdescriptionshort'] = 'Configuereu els permisos per incrustar contingut extern amb l\'etiqueta iframe';
 $string['allowgroupcategories'] = 'Permet categories de grups';
 $string['allowgroupcategoriesdescription'] = 'Si està marcat els administradors podran crear categories per a que els usuaris puguin categoritzar el seus grups.';
 $string['allowinstitutionpublicviews'] = 'Permet pàgines públiques d\'institució.';
@@ -77,7 +81,7 @@ $string['anonymouscommentsdescription'] = 'Si l\'activeu aleshores els usuaris n
 $string['antispam'] = 'Anti-spam';
 $string['antispamdescription'] = 'Tipus de mesures anti-spam utilitzades en els formularis vivibles públicament.';
 $string['approve'] = 'Aprova';
-$string['approveregistrationfor'] = 'Aprova el registre a \'%s %s\'';
+$string['approveregistrationfor2'] = 'Aproveu el registre de %s %s <%s>';
 $string['approveregistrationmessage'] = 'Això aprovarà el registre i afegirà l\'usuari a la institució \'% s\'. Esteu segur que voleu aprovar aquesta inscripció?';
 $string['authenticatedby'] = 'Mètode d\'autenticació';
 $string['authenticatedbydescription'] = 'Com s\'auteticarà a Mahara aquest usuari';
@@ -97,14 +101,36 @@ $string['bulkexportempty'] = 'Res adient per exportar. Si us plau, comproveu la 
 $string['bulkexportinstitution'] = 'La institució a la que pertanyen tots els usuaris que s\'han d\'exportar';
 $string['bulkexporttitle'] = 'Exporta els usuaris a fitxers Leap2A';
 $string['bulkexportusernames'] = 'Noms d\'usuari per exportar';
+$string['bulkexportusernamesdescription'] = 'Llista dels usuaris (un nom d\'usuari per línia) per l\'exportació juntament amb llurs dades.';
 $string['bulkimportdirdoesntexist'] = 'El directori %s no existeix';
 $string['bulkleap2aimport'] = 'Importa usuaris de fitxers Leap2A';
+$string['bulkleap2aimportdescription'] = '<p>Podeu fer una importació massiva d\'usuaris al vostre servidor des d\'una col·lecció de fitxers Leap2 . Heu d\'especificar dins del sistema de fitxers del servidor el fitxer ZIP que conté tots els fitxers ZIP Leap2 i un únic fitxer CSV anomenat usernames.csv que associa els noms d\'usuari a cada nom de fitxer.</p>
+<p>El fitxer usernames.csv ha de tenir una parença semblant a aquesta:</p>
+<pre>
+&nbsp;&nbsp;bob,mahara-export-leap-user8-1265165366.zip<br>
+&nbsp;&nbsp;nigel,mahara-export-leap-user1-1266458159.zip
+</pre>
+<p>on mahara-export-leap-user8-1265165366.zip i mahara-export-leap-user1-1266458159.zip són fitxers d\'un subdirectori anomenat "users".</p>
+<p>Aquest fitxer ZIP és generat per la utilitat interna de Mahara de fer una exportació massiva.</p>
+<p>Si heu d\'importar molts usuaris cal que tingueu paciència perquè el procés d\'importació pot trigar força.</p>';
 $string['bulkleap2aimportfiledescription'] = 'El fitxer comprimit del servidor que conté tots els usuaris exportats (en format Leap2A) juntament amb la llista en format CSV de noms d\'usuari.';
 $string['bulksuspenduserssuccess'] = 'Suspèn %d usuari(s)';
 $string['changeauthmethod'] = 'Canvia el mètode d\'autenticació';
 $string['changeinstitution'] = 'Canvia institució';
 $string['changeusername'] = 'Canvi de nom d\'usuari';
 $string['changeusernamedescription'] = 'Canvieu el nom d\'usuari d\'aquest usuari. Els noms d\'usuari tenen de 3 a 236 caràcters de longitud i poden contenir lletres, números i els símbols més comuns tret dels espais en blanc.';
+$string['cleanurls'] = 'Adreces URL netes';
+$string['cleanurlsdescription'] = '
+<p>Podeu configurar el vostre lloc perquè utilitzi URLs comprensibles pels humans als perfils d\'usuari, pàgines d\'inici dels grups i pàgines del portafolis. Per exemple,
+<ul><li>http://mahara.exemple.com/user/josep</li>
+<li>http://mahara.exemple.com/group/elgrupcatala3</li>
+<li>http://mahara.exemple.com/user/josep/portafolisjosep</li>
+</ul>
+Abans d\'activar aquesta opció l\'administrador del sistema ha de configurar el servidor de manera que les sol·licituds de pàgina entrants tinguin les URLs reescrites.</p>
+<p>Vegeu <a href="https://wiki.mahara.org/index.php/System_Administrator\'s_Guide/Clean_URL_Configuration">Clean URL Configuration</a> al wiki de Mahara per trobar les instruccions per fer-ho.</p>
+';
+$string['cleanurlsdisabled'] = 'Estan desactivades les adreces URL netes';
+$string['cleanurlsettings'] = 'Configuració de les adreces URL netes';
 $string['cliadminemail'] = 'Adreça de correu de l\'usuari administrador';
 $string['cliadminpassword'] = 'Contrasenya per l\'usuari administrador';
 $string['clickthebuttontocreatetheuser'] = 'Cliqueu el botó per crear l\'usuari';
@@ -125,6 +151,7 @@ $string['confirmdeletemenuitem'] = 'Esteu segur que voleu esborrar aquest ítem?
 $string['confirmdeleteuser'] = 'Esteu segur que voleu esborrar aquest usuari?';
 $string['confirmdeleteusers'] = 'Esteu segur que voleu esborrar els usuaris seleccionats?';
 $string['confirmremoveuserfrominstitution'] = 'Esteu segur que voleu esborrar l\'usuari d\'aquesta institució?';
+$string['contentstatstabletitle'] = 'Estadístiques dels continguts de la setmana actual';
 $string['continue'] = 'Continua';
 $string['copyright'] = 'Copyright &copy; 2006 endavant, Catalyst IT Ltd';
 $string['coredata'] = 'nucli de dades';
@@ -134,7 +161,7 @@ $string['country'] = 'País';
 $string['create'] = '3 - Crea';
 $string['createnewuserfromscratch'] = 'Crea un nou usuari des del principi';
 $string['createuser'] = 'S\'ha creat l\'usuari';
-$string['cronnotrunning'] = 'El Cron no està funcionant. <br>Trobareu instruccions per solucionar-ho a la <a href="http://wiki.mahara.org/System_Administrator\'s_Guide/Installing_Mahara">guia d\'instal·lació</a>.';
+$string['cronnotrunning1'] = '<span class="error">El Cron no funciona.</span><br>Busqueu instruccions a <a href="http://wiki.mahara.org/System_Administrator\'s_Guide/Installing_Mahara">la Guia d\'instal·lació</a> sobre com configurar-lo. Si ja l\'havieu configurat aleshores vol dir que fa poc han deixat de funcionar una o dues de les activitats.';
 $string['csverroremptyfile'] = 'El fitxer CSV és buit.';
 $string['csvfile'] = 'Fitxer CSV';
 $string['csvfiledescription'] = 'Fitxer que conté els usuaris que s\'han d\'afegir';
@@ -233,13 +260,14 @@ $string['expired'] = 'Caducat';
 $string['expiredusers'] = 'Usuaris caducats';
 $string['exportingnotsupportedyet'] = 'No està suportada encara l\'exportació de perfils d\'usuari';
 $string['exportingusername'] = 'Exportant \'%s\'';
+$string['exportstatsascsv'] = 'Exporta les estadístiques en format CSV';
 $string['exportuserprofiles'] = 'Exporta els perfils d\'usuari';
 $string['exportusersascsv'] = 'Exporta usuaris en format CSV';
 $string['externallink'] = 'Enllaç extern';
 $string['failedtoobtainuploadedleapfile'] = 'S\'ha produït un error en carregar el fitxer Leap2A';
 $string['failedtounzipleap2afile'] = 'S\'ha produït un error al descomprimir el fitxer Leap2A. Reviseu el registre d\'errors per obtenir més informació.';
 $string['fileisnotaziporxmlfile'] = 'Aquest fitxer no s\'ha identificat com un fitxer de tipus ZIP o XML';
-$string['filequota'] = 'Quota d\'espai (MB)';
+$string['filequota1'] = 'Espai de disc per fitxers';
 $string['filequotadescription'] = 'Espai total disponible a l\'àrea de fitxers de l\'usuari.';
 $string['filtersinstalled'] = 'S\'han instal·lat els filtres.';
 $string['footercustomlink'] = 'Podeu reemplaçar la pàgina per defecte, <em>% s </ em>, tot introduint aquí una URL  o deixant-ho en blanc si voleu que aparegui el valor predeterminat.';
@@ -252,6 +280,18 @@ $string['forceuserstochangepassword'] = 'Força el canvi de contrasenya?';
 $string['forceuserstochangepassworddescription'] = 'S\'ha de forçar el canvi de contrasenya dels nous usuaris el primer cop que entrin al lloc?';
 $string['fromversion'] = 'De de la  versió';
 $string['generalsettingslegend'] = 'Paràmetres generals';
+$string['generatedgroupurls'] = array(
+    0 => 'S\'ha generat 1 adreça URL de pàgina inicial de grup',
+    1 => 'S\'han generat %s adreces URL de pàgines inicials de grup',
+);
+$string['generateduserurls'] = array(
+    0 => 'S\'ha generat 1 adreça URL de perfil',
+    1 => 'S\'han generat %s adreces URL de perfil',
+);
+$string['generatedviewurls'] = array(
+    0 => 'S\'ha generat 1 adreça URL de pàgina de portafolis',
+    1 => 'S\'han generat %s adreces URL de pàgines de portafolis',
+);
 $string['generatesitemap'] = 'Genera el mapa del lloc';
 $string['generatesitemapdescription'] = 'Genera el mapa del lloc a partir de les pàgines públiques, els grups i els temes dels fòrums.';
 $string['getreports'] = 'Obté informes';
@@ -280,12 +320,18 @@ $string['groupsettingslegend'] = 'Configuració de grup';
 $string['groupstatstabletitle'] = 'Grups més grans';
 $string['grouptype'] = 'Tipus de grup';
 $string['groupvisible'] = 'Visibilitat';
+$string['historicalstatstabletitle'] = 'Històric de les estadístiques del camp \'%s\'';
 $string['home'] = 'Inici';
 $string['homepageinfo'] = 'Mostra la informació de la pàgina d\'inici';
 $string['homepageinfodescription'] = 'Si l\'activeu es mostrarà a la pàgina d\'inici del lloc informació sobre Mahara i el seu ús. Els usuaris registrats poden desactivar-ho.';
 $string['howdoyouwanttocreatethisuser'] = 'Com voleu crear aquest usuari?';
 $string['htmlfilters'] = 'Filtres HTML';
 $string['htmlfiltersdescription'] = 'Activeu nous filtres per netejar l\'HTML';
+$string['iframedisplaynamedescription'] = 'El nom del lloc que es mostrarà als usuaris';
+$string['iframeiconhost'] = 'Icona de l\'hoste';
+$string['iframeiconhostdescription'] = 'Si ho desitgeu, podeu especificar un hoste diferent per la imatge de favicon. Tots els llocs amb el mateix nom utilitzaran aquesta imatge.';
+$string['iframeinvalidsite'] = 'Aquest camp hauria de contenir un nom vàlid d\'hoste o de camí opcional i pot incloure  lletres, dígits i els caràcters \'.\', \'/\', \'_\', i  \'-\'';
+$string['iframeurldescription'] = 'Text que ha de coincidir amb el començament de la URL d\'origen de l\' iframe (sense l\'http://). Només són admeses lletres, dígits i els caràcters \'.\', \'/\', \'_\', i  \'-\'';
 $string['importednuserssuccessfully'] = 'S\'han importat correctament %d usuaris de %d';
 $string['importfailedfornusers'] = 'Ha fallat la importació de %d usuaris de %d';
 $string['importfile'] = 'Fitxer d\'exportació massiva';
@@ -314,6 +360,7 @@ $string['institutionauth'] = 'Autoritats de la institució';
 $string['institutionauthinuseby'] = 'Aquesta autenticació d\'institució encara la fa servir %s';
 $string['institutionautosuspend'] = 'Auto-suspèn institucions caducades';
 $string['institutionautosuspenddescription'] = 'Si l\'activeu les institucions caducades seran suspeses automàticament';
+$string['institutioncreated'] = 'S\'ha creat la institució';
 $string['institutiondeletedsuccessfully'] = 'S\'ha esborrat correctament la institució.';
 $string['institutiondetails'] = 'Detalls de la institució';
 $string['institutiondisplayname'] = 'Mostra el nom de la institució';
@@ -338,6 +385,8 @@ $string['institutionsettingslegend'] = 'Configuració de la institució';
 $string['institutionstaff'] = 'Plantilla de la institució';
 $string['institutionstaffdescription'] = 'Assigneu permisos als usuaris directius';
 $string['institutionstaffuserspagedescription'] = 'Aquí podeu escollir quins usuaris seran directius de la institució. Els directius actuals són a la dreta i els directius potencials a l\'esquerra.';
+$string['institutionstatisticsfor'] = 'Estadístiques de la institució \'%s\'';
+$string['institutionstatstabletitle'] = 'Comparació de les estadístiques de les institucions';
 $string['institutionstillhas'] = 'Aquesta institució encara té %s';
 $string['institutionstudentiddescription'] = 'Identificador opcional específic de la institució. L\'usuari no pot editar aquest camp.';
 $string['institutionsuspended'] = 'Institució suspesa';
@@ -345,6 +394,8 @@ $string['institutionunsuspended'] = 'S\'ha aixecat la suspensió de la instituci
 $string['institutionupdatedsuccessfully'] = 'S\'ha actualitzat correctament la institució.';
 $string['institutionuserserrortoomanyinvites'] = 'No s\'han enviat les invitacions. El nombre de membres existent més el nombre d\'invitacions no pot excedir el màxim d\'usuaris de la institució. Podeu convidar menys usuaris, esborrar-ne algun o demanar a l\'administrador del lloc que augmenti el nombre d\'usuaris.';
 $string['institutionuserserrortoomanyusers'] = 'No s\'han afegit els usuaris. El nombre de membres no pot excedir el màxim permès per la institució. Es poden afegir menys usuaris, esborrar-ne alguns de la institució o demanar a l\'administrador del lloc que augmenti el nombre d\'usuaris.';
+$string['institutionusersinstructionsinvited'] = 'La llista d\'usuaris de l\'esquerra mostra tots els usuaris que han rebut una invitació per unir-se a la institució però que encara no l\'han acceptat o bé han declinat la invitació. Podeu utilitzar l\'eina de cerca per reduir el nombre d\'usuaris que s\'hi mostra. Per anul·lar les invitacions a la institució primer heu de moure alguns usuaris a la part dreta tot seleccionant-ne un o més i aleshores fent clic sobre el botó amb la fletxa a la dreta. Els usuaris seleccionats passaran a la dreta. El botó "Anul·la invitacions" eliminarà totes les invitacions als usuaris de la dreta. Els usuaris de l\'esquerra, però,  mantindran les seves invitacions i encara podran unir-se a la institució en qualsevol moment.';
+$string['institutionusersinstructionslastinstitution'] = 'La llista dels usuaris de l\'esquerra mostra tots els usuaris que encara no són membres de la vostra institució o que l\'han deixada. Podeu utilitzar l\'eina de cerca per reduir el nombre d\'usuaris que s\'hi mostra. Per convidar usuaris a unir-se a la institució primer heu de moure alguns usuaris a la llista de la dreta tot seleccionant-ne un o més i aleshores fent clic sobre el botó amb la fletxa a la dreta per moure\'ls a la llista de la dreta. El botó "Invita usuaris" enviarà invitacions a tots els usuaris de la dreta, però no estaran associats a la institució fins que no acceptin la invitació.';
 $string['institutionusersinstructionsmembers'] = 'La llista d\'usuaris de l\'esquerra mostra tots els membres de la institució. Utilitzeu el formulari de cerca per reduir el nombre d\'usuaris que s\'hi mostra. Per esborrar usuaris de la institució cal que primer mogueu alguns usuaris a la dreta tot seleccionant un o més noms i, en acabat, clicant la fletxa dreta per moure\'ls a la llista de mà dreta.  El botó "Esborra usuaris" esborrarà de la institució tots els usuaris de la dreta, però els de l\'esquerra romandran a la institució.';
 $string['institutionusersinstructionsnonmembers'] = 'La llista d\'usuaris de l\'esquerra mostra tots els usuaris que encara no són membres de la vostra institució. Utilitzeu el formulari de cerca per reduir el nombre d\'usuaris que s\'hi mostra. Per convidar nous usuaris a ser membres de la institució cal que primer mogueu alguns usuaris a la dreta tot seleccionant un o més noms i, en acabat, clicant la fletxa dreta per moure\'ls a la llista de mà dreta. El botó "Convida usuaris" enviarà les invitacions a tots els usuaris de mà dreta, però no estaran associats a la institució fins que acceptin la invitació';
 $string['institutionusersinstructionsrequesters'] = 'La llista d\'usuaris de l\'esquerra mostra tots els usuaris que han demanat unir-se a la vostra institució. Utilitzeu el formulari de cerca per reduir el nombre d\'usuaris que s\'hi mostra. Si voleu afegir usuaris a la institució o rebutjar la seva sol·licitud cal que primer mogueu alguns usuaris a mà dreta tot seleccionant un o més noms i, en acabat, clicant a la fletxa cap a la dreta. El botó "Afegeix membres" afegirà tots els usuaris cap a la institució, cap a la dreta. El botó "Rebutja sol·licituds" esborrarà les sol·licituds dels membres de la dreta.';
@@ -372,6 +423,7 @@ $string['keydeleted'] = 'S\'ha esborrat la clau pública i se n\'ha regenerat un
 $string['language'] = 'Idioma';
 $string['lastinstitution'] = 'Institució anterior';
 $string['latestversionis'] = 'la darrera versió és <a href="%s">%s</a>';
+$string['leap2aimportfailed'] = '<p><strong>Ha fallat la importació del fitxer Leap2A</strong></p><p>Això pot ser degut bé a què no heu seleccionat per carregar un fitxer Leap2 vàlid o bé perquè la versió instal·lada de Mahara no suporta la versió del vostre fitxer Leap2. També podria ser que hi hagués un bug a Mahara que provoqués el problema amb el vostre fitxer, tot i que aquest fos vàlid. </p><p>Proveu a <a href="add.php">tornar enrere i tornar-ho a provar</a> i, si persistís el problema, podeu fer una entrada als  <a href="http://mahara.org/forums/">Fòrums de Mahara</a> tot demanant ajuda. Tingueu preparada una còpia del fitxer perquè probablement us la demanaran.</p>';
 $string['linkedto'] = 'Enllaçat a';
 $string['linksandresourcesmenu'] = 'Menú Enllaços i Recursos';
 $string['linksandresourcesmenupagedescription'] = 'El menú d\'Enllaços i recursos apareix a tots els usuaris a la majoria de pàgines. Podeu afegir enllaços a altres pàgines web i a fitxers carregats a la secció  %sAdmin Files%s .';
@@ -395,6 +447,7 @@ $string['logodescription'] = 'Podeu carregar aquí una imatge  que es mostrarà 
 $string['maharainstalled'] = 'Mahara ja està instal·lat';
 $string['maharanotinstalled'] = 'Actualment Mahara no està instal·lat. Instal·leu Mahara abans d\'intentar actualitzar-lo.';
 $string['maharaversion'] = 'versió de Mahara';
+$string['makeuserinstitutionstaff'] = 'Assigneu automàticament els permisos de directiu de la institució a l\'usuari amb aquest correu electrònic el primer cop que entri al lloc.';
 $string['managegroupdescription'] = 'Utilitzeu el següent formulari per assignar o cessar els administradors d\'aquest grup. Encara que cesseu un administrador del grup, l\'usuari romandrà com a membre del grup.';
 $string['managegroupquotadescription'] = 'Utilitzeu el següent formulari  per canviar l\'assignació d\'espai de disc a aquest grup.';
 $string['managegroups'] = 'Gestió de Grups';
@@ -430,6 +483,7 @@ $string['noleap2axmlfiledetected'] = 'No s\'ha detectat cap fitxer leap2a.xml. T
 $string['none'] = 'Cap';
 $string['nopendingregistrations'] = 'No s\'ha trobat cap registre pendent per aquesta institució';
 $string['nositefiles'] = 'No hi ha cap fitxer del lloc';
+$string['nostats'] = 'No hi ha disponible cap estadística';
 $string['nosuchinstitution'] = 'Aquesta institució no existeix';
 $string['notadminforinstitution'] = 'No sou administrador d\'aquesta institució';
 $string['nothingtoupgrade'] = 'No hi ha res per actualitzar';
@@ -454,6 +508,9 @@ $string['pathtoclam'] = 'Camí del clam';
 $string['pathtoclamdescription'] = 'Camí del sistema de fitxers per clamscan o clamdscan';
 $string['pendingregistration'] = 'Registre pendent';
 $string['pendingregistrations'] = 'Registres pendents';
+$string['pendingregistrationspagedescription'] = '<p>En aquesta pàgina podeu veure-hi els usuaris que s\'han registrat per sí mateixos i el que han demanat la pertinença a la vostra institució i, per tant, podreu aprovar o denegar el seu registre.<p>
+
+<p>Aprovant el seu registre els esteu afegint com a membres a la institució i rebran una notificació amb més instruccions per activar el seu compte. Si denegueu el seu registre rebran una notificació automàtica per correu electrònic  amb la denegació de la seva sol·licitud.</p>';
 $string['performinginstallation'] = 'Instal·lant i actualitzant...';
 $string['performingupgrades'] = 'Performing upgrades...';
 $string['pluginadmin'] = 'Connector d\'Administració';
@@ -481,6 +538,9 @@ $string['publickey'] = 'Clau pública';
 $string['publickeydescription2'] = 'Aquesta clau pública es genera automàticament i canvia cada  %s dies';
 $string['publickeyexpires'] = 'La clau pública expira';
 $string['quotaused'] = 'Espai de disc utilizat';
+$string['regenerateurls'] = 'Regenera l\'adreça URL';
+$string['regenerateurlsconfirm'] = 'Esteu segur que voleu continuar? S\'esborraran totes les adreces URL triades pels usuaris.';
+$string['regenerateurlsdescription'] = 'Això esborrarà totes les adreces URL netes del lloc i les regenerarà automàticament utilitzant els noms d\'usuari, noms de grup i títols de pàgina.';
 $string['registerterms'] = 'Acord per registrar-se';
 $string['registertermsdescription'] = 'Obliga als usuaris a accpetar els Termes i condicions abans de poder-se registrar. Hauríeu d\\\'editar els Termes i condicions del vostre lloc abans d\\\'activar aquesta opció.';
 $string['registerthismaharasite'] = 'Registreu aquest lloc Mahara';
@@ -587,13 +647,15 @@ $string['staffuserreportsdescription'] = 'Si està activat, els directius del ll
 $string['staffusers'] = 'Usuaris directius';
 $string['staffusersdescription'] = 'Assigneu permisos als usuaris directius';
 $string['staffuserspagedescription'] = 'Aquí podeu escollir quins usuaris seran directius del lloc. Els directius actuals són a la dreta i els directius potencials a l\'esquerra.';
-$string['staffusersupdated'] = 'S\'han actualitzat els usuaris de plantilla';
+$string['staffusersupdated'] = 'S\'han actualitzat els usuaris directius';
+$string['statistics'] = 'Estadístiques';
 $string['statsmaxfriends'] = 'Té %s amics (el que més és <a href="%s">%s</a> amb %d)';
 $string['statsmaxgroups'] = 'És a %s grups (el que més és <a href="%s">%s</a> amb %d)';
 $string['statsmaxquotaused'] = 'Ha usat al voltant de %s d\'espai de disc (el que més és <a href="%s">%s</a> amb %s)';
 $string['statsmaxviews'] = 'Ha fet %s vistes (el que més és <a href="%s">%s</a> amb %d)';
 $string['statsnofriends'] = 'Té 0 amics :(';
 $string['statsnogroups'] = 'És a 0 grups :(';
+$string['statsnoquota'] = 'Ha esgotat l\'espai de disc';
 $string['statsnoviews'] = 'Ha fet 0 vistes :(';
 $string['studentid'] = 'Número ID';
 $string['successfullyinstalled'] = 'S\'ha instal·lat correctament Mahara';
@@ -655,6 +717,7 @@ $string['upgradingplugin'] = 'S\'està actualitzant %s';
 $string['uploadcopyright'] = 'Carrega les condicions del Copyright';
 $string['uploadcsv'] = 'Afegeix usuaris CSV';
 $string['uploadcsvdescription'] = 'Carrega un fitxer CSV amb usuaris nous';
+$string['uploadcsverrorduplicateremoteuser'] = 'La línia %s del fitxer especifica el nom d\'usuari remot "%s" que ja està essent utilitzat per un altre usuari del sistema.';
 $string['uploadcsverroremailaddresstaken'] = 'La línia %s del fitxer especifica una adreça de correu "%s" que ja és utilitzada per un altre usuari';
 $string['uploadcsverrorincorrectnumberoffields'] = 'Hi ha un error a la línia %s del vostre fitxer. Aquesta línia no té el nombre correcte de camps.';
 $string['uploadcsverrorinvalidemail'] = 'Hi ha un error a la línia %s del vostre fitxer. L\'adreça de correu d\'aquest usuari no està en el format correcte.';
@@ -666,6 +729,7 @@ $string['uploadcsverrornorecords'] = 'Sembla que el fitxer no conté cap registr
 $string['uploadcsverrorremoteusertaken'] = 'La línia %s del fitxer especifica el nom d\'usuari remot "%s" que ja està essent usat per l\'usuari "%s"';
 $string['uploadcsverrorrequiredfieldnotspecified'] = 'No s\'ha especificat el camp requerit "%s" a la línia de format';
 $string['uploadcsverrortoomanyusers'] = 'Hi ha massa línies al vostre fitxer CSV. No hauria de tenir més de %s línies.';
+$string['uploadcsverrorunspecifiedproblem1'] = 'Per alguna raó els registres del vostre fitxer CSV no es poden inserir. Si el fitxer té el format correcte aleshores és a causa d\'un bug i hauríeu de <a href="https://bugs.launchpad.net/mahara/+filebug">crear un informe de bug </a>, al que adjuntaríeu el fitxer CSV (recordeu-vos d\'esborrar les contrasenyes!) i, si és possible, el fitxer amb el registre d\'errors.';
 $string['uploadcsverroruseralreadyexists'] = 'La línia %s del fitxer especifica un nom d\'usuari "%s" que ja existeix';
 $string['uploadcsverroruserinaninstitution'] = 'Hi ha un error en la línia %s: l\'usuari "%s" és membre de les següents institucions: %s. No podeu actualitzar a "Cap institució" el mètode d\'autenticació d\'aquest usuari.';
 $string['uploadcsverrorusernotininstitution'] = 'Hi ha un error en la línia %s: l\'usuari "%s" no és membre de la institució %s.';
@@ -707,6 +771,21 @@ $string['uploadgroupcsverroropencontrolled'] = 'Hi ha un error en la línia %s d
 $string['uploadgroupcsverroropenrequest'] = 'Hi ha un error en la línia %s del vostre fitxer: els grups amb pertinença oberta no admeten sol·licituds de pertinença.';
 $string['uploadgroupcsverrorshortnamealreadytaken'] = 'Hi ha un error en la línia %s del vostre fitxer: elnom curt "%s" ja està essent usat per un altre usuari.';
 $string['uploadgroupcsverrorusernamesnotlastfield'] = 'El camp "usernames" dels noms d\'usuari ha de ser l\'últim camp de l\'encapçalament.';
+$string['uploadgroupcsvpagedescription2'] = '<p>Podeu utilitzar aquesta funció per carregar grups nous a través d\'un fitxer <acronym title="Comma Separated Values">CSV</acronym>.</p>
+
+<p>La primera fila del fitxer CSV ha d\'especificar el format de les dades. Per exemple, ha de ser semblant  a això:</p>
+
+<pre>shortname,displayname,roles</pre>
+
+<p>aquesta fila ha d\'incloure els camps <tt>shortname</tt>, <tt>displayname</tt>, i <tt>roles</tt></p>
+
+<p>El camp roles pot tenir alguns dels següents: %s</p>
+
+%s
+
+<p>El fitxer CSV pot incloure altres camps que necessiteu. La llista sencera de camps és::</p>
+
+%s';
 $string['uploadgroupmemberscsv'] = 'Actualitza els membres del grup per CSV';
 $string['uploadgroupmemberscsvdescription'] = 'Carrega un fitxer CSV amb els membres dels grups';
 $string['uploadgroupmemberscsverrorduplicateusername'] = 'Hi ha un error en la línia %s del vostre fitxer: El nom curt "%s" i el nom d\'usuari "%s" ja estan especificats al fitxer.';
@@ -715,6 +794,17 @@ $string['uploadgroupmemberscsverrornoadminlisted'] = 'Hi ha un error en la líni
 $string['uploadgroupmemberscsverrornosuchshortname'] = 'Hi ha un error en la línia %s del vostre fitxer: El  nom curt del grup "%s" no existeix o no forma part de la institució "%s"';
 $string['uploadgroupmemberscsverrornosuchusername'] = 'Hi ha un error en la línia %s del vostre fitxer: L\'usuari "%s" no existeix';
 $string['uploadgroupmemberscsverrorusernotininstitution'] = 'Hi ha un error en la línia %s del vostre fitxer: El nom d\'usuari "%s" no forma part de la institució "%s"';
+$string['uploadgroupmemberscsvpagedescription2'] = '<p>Podeu utilitzar aquest servei per actualitzar els membres dels grups controlats d\'aquesta institució. Podeu carregar membres nous a través d\'un fitxer <acronym title="Comma Separated Values">CSV</acronym>.</p>
+
+<p>La primera fila del fitxer CSV ha d\'especificar el format de les dades. Per exemple, ha de tenir un aspecte similar a aquest:</p>
+
+<pre>shortname,username,role</pre>
+
+<p>La fila ha d\'incloure els camps citats, però no necessàriament en el mateix ordre.</p>
+
+<p>El camp shortname ha de ser el mateix que heu utilitzat al crear el grup <a href="%s" title="%s">aquí</a>.</p>
+
+<p>El camp role només pot ser: <tt>admin</tt>, <tt>member</tt>, or <tt>tutor</tt> depenent del tipus de grup que hagueu definit</p>';
 $string['uploadleap2afile'] = 'Carrega un fitxer Leap2A';
 $string['uptodate'] = 'fins ara';
 $string['useradded'] = 'S\'ha afegit l\'usuari';

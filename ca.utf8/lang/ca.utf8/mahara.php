@@ -133,6 +133,8 @@ $string['accountsuspended'] = 'El vostre compte ha estat suspès a partir de %s 
 $string['activityprefs'] = 'Preferències d\'activitat';
 $string['add'] = 'Afegeix';
 $string['addemail'] = 'Afegiu l\'adreça de correu';
+$string['addone'] = 'Afegir-ne 1';
+$string['adminfirst'] = 'Primer els administradors';
 $string['adminofinstitutions'] = 'Administrador de %s';
 $string['adminphpuploaderror'] = 'L\'error de càrrega del fitxer probablement és degut a la configuració del servidor.';
 $string['after'] = 'després de';
@@ -142,17 +144,21 @@ $string['alltags'] = 'Totes les etiquetes';
 $string['allusers'] = 'Tots els usuaris';
 $string['alphabet'] = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z';
 $string['applychanges'] = 'Aplica els canvis';
+$string['approvalrequired'] = 'Cal l\'aprovació';
 $string['artefact'] = 'artefacte';
 $string['artefactnotfound'] = 'No s\'ha trobat cap artefacte que contingui %s';
 $string['artefactnotpublishable'] = 'L\'artefact %s no es pot publicar a la pàgina %s';
 $string['artefactnotrendered'] = 'Artefacte no processat';
+$string['artefacts'] = 'Artefactes';
 $string['at'] = 'a';
 $string['attachment'] = 'Adjunt';
 $string['back'] = 'Enrere';
 $string['backto'] = 'Enrere a %s';
 $string['before'] = 'abans de';
 $string['belongingto'] = 'Que pertanyi a';
+$string['betweenxandy'] = 'Entre %s i %s';
 $string['blacklisteddomaininurl'] = 'Una url en aquest camp conté el domini bloquejat  %s.';
+$string['blocks'] = 'Blocs';
 $string['bytes'] = 'bytes';
 $string['cancel'] = 'Cancel·la';
 $string['cancelrequest'] = 'Cancel·la la sol·licitud';
@@ -173,6 +179,7 @@ $string['clamfailed'] = 'Clam AV has failed to run.  The return error message wa
 $string['clamlost'] = 'Clam AV is configured to run on file upload, but the path supplied to Clam AV, %s, is invalid.';
 $string['clammovedfile'] = 'S\'ha mogut el fitxer al directori de quarantena.';
 $string['clamunknownerror'] = 'S\'ha produït un error desconegut a Clam.';
+$string['cleanurlallowedcharacters'] = 'Només s\'admeten lletres minúscules de la a a la z i xifres';
 $string['collapse'] = 'Redueix';
 $string['complete'] = 'Completa';
 $string['config'] = 'Configuració';
@@ -180,6 +187,7 @@ $string['confirmdeletetag'] = 'Esteu segur que voleu treure aquesta etiqueta de 
 $string['confirminvitation'] = 'Confirmeu la invitació';
 $string['confirmpassword'] = 'Confirmeu la contrasenya';
 $string['contactus'] = 'Contacte';
+$string['content'] = 'Contingut';
 $string['controlyourprivacylinked'] = 'Controleu la vostra <a href="%s">privacitat</a>';
 $string['cookiesnotenabled'] = 'El vostre navegador no té les cookies activades o està blocant les cookies d\'aquest lloc. Cal que activeu les cookies per poder-hi entrar.';
 $string['couldnotgethelp'] = 'S\'ha produït un error en accedir a la pàgina d\'ajuda';
@@ -467,6 +475,8 @@ $string['emailtoolong'] = 'L\'adreça de correu no pot superar els 255 caràcter
 $string['enable'] = 'Activa';
 $string['errorprocessingform'] = 'S\'ha produït un error enviant aquest formulari. Si us plau comproveu els camps marcats i torneu a provar-ho.';
 $string['expand'] = 'Expandeix';
+$string['facebookdescription'] = 'Mahara és una aplicació web de codi lliure que crea portafolis electrònics i xarxes socials.
+Proporciona eines als usuaris per crear i mantenir un portafolis digital dels seus aprenentatges amb característiques de xarxa social que els permet interactuar entre sí.';
 $string['filenotfound'] = 'No s\'ha trobat el fitxer';
 $string['filenotimage'] = 'El fitxer que heu pujat no és una imatge vàlida. Ha de tenir l\'extensió PNG, JPEG o GIF.';
 $string['fileunknowntype'] = 'No s\'ha pogut determinar el tipus de fitxer que heu carregat. Pot ser que estigui corrupte o bé que hi hagi un problema de configuració. Poseu-vos en contacte amb l\'administrador.';
@@ -476,12 +486,14 @@ $string['findfriends'] = 'Cerca amics';
 $string['findfriendslinked'] = 'Trobeu <a href="%s">Amics</a>';
 $string['findgroups'] = 'Cerca grups';
 $string['first'] = 'Primera';
+$string['firstjoined'] = 'Primer en unir-s\'hi';
 $string['firstname'] = 'Nom';
 $string['firstnamedescription'] = ' ';
 $string['firstpage'] = 'Primera pàgina';
 $string['forgotpassemailsendunsuccessful'] = 'A causa de problemes tècnics no s\'ha pogut enviar el missatge de correu. Si us plau, torneu a prova-ho d\'aquí a una estona';
 $string['forgotpassemailsentanyway1'] = 'S\'ha enviat un correu electrònic a l\'adreça registrada per aquest usuari, però potser  l\'adreça no és correcta o el servidor receptor està tornant missatges. Si no rebeu el correu electrònic, si us plau, poseu-vos en contacte amb l\'administrador de %s per restablir la vostra contrasenya.';
 $string['forgotpassnosuchemailaddressorusername'] = 'L\'adreça de correu o nom d\'usuari que heu escrit no coincideix amb cap usuari del lloc.';
+$string['forgotpassuserusingexternalauthentication'] = 'L\'usuari que heu demanat utilitza un mètode d\'autenticació extern. <a href="%s">Demaneu ajuda al vostre administrador</a> si voleu canviar la contrasenya o bé doneu un altre nom d\'usuari o adreça de correu electrònic.';
 $string['forgotpasswordenternew'] = 'Escriviu la nova contrasenya per continuar';
 $string['forgotusernamepassword'] = 'Heu oblidat el vostre nom d\'usuari o contrasenya?';
 $string['forgotusernamepasswordemailmessagehtml'] = '<p>Dear %s,</p>
@@ -532,6 +544,7 @@ $string['height'] = 'Alçada';
 $string['heightshort'] = 'alç';
 $string['hidden'] = 'ocult';
 $string['hide'] = 'Amaga';
+$string['historical'] = 'Històric';
 $string['home'] = 'Inici';
 $string['howtodisable'] = 'Heu amagat la caixa informativa. Controleu la seva visibilitat des de <a href="%s">Configuració</a>.';
 $string['image'] = 'Imatge';
@@ -566,6 +579,13 @@ Si voleu estendre la vostra pertinença a aquetsa institució o teniu qualsevol 
 %s
 
 Salutacions, %s administrador del lloc';
+$string['institutionexpirywarningtext_site'] = 'Benvolgut/da %s,
+
+La institució \'%s\' caducarà en  %s.
+
+Si voleu estendre la vostra pertinença a %s cal que contacteu amb ells.
+
+Salutacions, %s Administrador del lloc';
 $string['institutionfull'] = 'La institució que heu triat no accepta més inscripcions.';
 $string['institutioninformation'] = 'Informació de la institució';
 $string['institutionlink'] = '<a href="%s">%s</a>';
@@ -573,7 +593,7 @@ $string['institutionmemberconfirmmessage'] = 'Ara ja sou membre de %s.';
 $string['institutionmemberconfirmsubject'] = 'Confirmació de la inscripció a la institució';
 $string['institutionmemberrejectmessage'] = 'S\'ha declinat la vostra sol·licitud d\'inscripció a la institució %s.';
 $string['institutionmemberrejectsubject'] = 'S\'ha declinat la sol·licitud d\'inscripció a la institució';
-$string['institutionmembership'] = 'Pertanyença a Institucions';
+$string['institutionmembership'] = 'Pertinença a Institucions';
 $string['institutionmembershipdescription'] = 'Si pertanyeu a alguna institució, el nom apareixerà en la següent llista.';
 $string['institutionmembershipexpirywarning'] = 'Avís d\'expiració de la pertinença a una institució';
 $string['institutionmembershipexpirywarninghtml'] = '<p>Benvolgut/da %s,</p>
@@ -592,15 +612,19 @@ Si voleu continuar-hi pertanyent o teniu algun dubte referent al tema poseu-vos 
 %s
 
 Salutacions, %s administrador del lloc';
+$string['institutions'] = 'Institucions';
 $string['invalidsesskey'] = 'Invalid session key';
 $string['invitedgroup'] = 'grup invitat a';
 $string['invitedgroups'] = 'grups invitats a';
+$string['itemdeleted'] = 'Ítem esborrat';
 $string['itemstaggedwith'] = 'Ítems etiquetats amb "%s"';
+$string['itemupdated'] = 'Ítem actualitzat';
 $string['javascriptnotenabled'] = 'El vostre navegador no té activat el Javascript per aquest lloc web. Cal que l\'activeu per poder-hi entrar.';
 $string['joingroups'] = 'Uniu-vos a <a href="%s">Grups</a>';
 $string['joininstitution'] = 'Uniu-vos a la institució';
 $string['language'] = 'Idioma';
 $string['last'] = 'Última';
+$string['lastjoined'] = 'Darrer en unir-s\'hi';
 $string['lastminutes'] = 'Darrers %s minuts';
 $string['lastname'] = 'Cognoms';
 $string['lastnamedescription'] = ' ';
@@ -617,10 +641,13 @@ $string['loginfailed'] = 'No heu donat la clau correcta per entrar. Comproveu qu
 $string['loginto'] = 'He entrat a %s';
 $string['logout'] = 'Sortida';
 $string['lostusernamepassword'] = 'Nom d\'usuari o contrasenya perduts';
+$string['maxitemsperpage'] = 'Nombre màxim d\'articles per pàgina';
 $string['memberofinstitutions'] = 'Membre de %s';
+$string['members'] = 'Membres';
 $string['membershipexpiry'] = 'La inscripció expira';
 $string['message'] = 'Missatge';
 $string['messagesent'] = 'S\'ha enviat el missatge';
+$string['modified'] = 'Modificat';
 $string['months'] = 'mesos';
 $string['more...'] = 'Més ...';
 $string['mustspecifyoldpassword'] = 'Heu d\'escriure la vostra contrasenya actual';
@@ -631,7 +658,9 @@ $string['mymessages'] = 'Els meus Missatges';
 $string['myportfolio'] = 'El meu Portafolis';
 $string['mytags'] = 'Les meves etiquetes';
 $string['name'] = 'Nom';
+$string['nameatoz'] = 'Nom de la A a la Z';
 $string['namedfieldempty'] = 'El camp obligatori "%s" és buit';
+$string['nameztoa'] = 'Nom de la Z a la A';
 $string['newpassword'] = 'Contrasenya nova';
 $string['next'] = 'Següent';
 $string['nextpage'] = 'Pàgina següent';
@@ -731,6 +760,8 @@ $string['onlineusers'] = 'Usuaris connectats';
 $string['optionalinstitutionid'] = 'Institució ID (opcional)';
 $string['organisedescription'] = 'Organitzeu el vostre eportafolis amb les <a href="%s">Pàgines.</a>  Creeu diferents pàgines per a diferents audiències -  escolliu quins elements hi poseu.';
 $string['organisesubtitle'] = 'Mostreu el vostre eportafolis amb les <em>Pàgines</em>';
+$string['orloginvia'] = 'O registreu-vos per:';
+$string['overview'] = 'Vista general';
 $string['password'] = 'Contrasenya';
 $string['passwordchangedok'] = 'S\'ha canviat correctament la contrasenya';
 $string['passworddescription'] = ' ';
@@ -769,6 +800,7 @@ $string['pluginexplainaddremove'] = 'A Mahara els connectors estan sempre instal
 $string['pluginexplainartefactblocktypes'] = 'Quan s\'amaga un connector del tipus <i>artefacte</i> el sistema de Mahara també deixa de mostrar els blocs relacionats amb ell.';
 $string['pluginnotenabled'] = 'Connector no activat. Primer heu d\'activar el connector %s.';
 $string['plugintype'] = 'Tipus de connector';
+$string['posts'] = 'Entrades';
 $string['preferences'] = 'Preferències';
 $string['preferredname'] = 'Nom preferit';
 $string['previous'] = 'Anterior';
@@ -788,7 +820,6 @@ $string['quota'] = 'Quota';
 $string['quotausage'] = 'Esteu fent servir <span id="quota_used">%s</span> dels vostres <span id="quota_total">%s</span> de quota.';
 $string['reallyleaveinstitution'] = 'Esteu segur que voleu abandonar aquesta institució?';
 $string['reason'] = 'Raó';
-$string['recentactivity'] = 'Activitat recent';
 $string['register'] = 'Registra';
 $string['registeragreeterms'] = 'També heu d\'acceptar els <a href="terms.php">termes i condicions</a>.';
 $string['registeringdisallowed'] = 'Ara no us podeu registrar al sistema';
@@ -839,11 +870,11 @@ $string['sizegb'] = 'GB';
 $string['sizekb'] = 'KB';
 $string['sizemb'] = 'MB';
 $string['sortalpha'] = 'Ordena alfabèticament les etiquetes';
+$string['sortedby'] = 'ordenat per';
 $string['sortfreq'] = 'Ordena les etiquetes per freqüència';
 $string['sortresultsby'] = 'Ordena els resultats per:';
 $string['spamtrap'] = 'Trampa d\'spam';
 $string['staffofinstitutions'] = 'Directius de %s';
-$string['strftimenotspecified'] = 'No s\'ha especificat';
 $string['studentid'] = 'número ID';
 $string['subject'] = 'Tema';
 $string['submit'] = 'Envia';
@@ -899,5 +930,6 @@ $string['youraccounthasbeensuspendedreasontext'] = '%s ha suspès el vostre comp
 $string['youraccounthasbeensuspendedtext2'] = '%s ha suspès el vostre compte a %s.';
 $string['youraccounthasbeenunsuspended'] = 'S\'ha aixecat la suspensió del vostre compte';
 $string['youraccounthasbeenunsuspendedtext2'] = 'S\'ha aixecat la suspensió del vostre compte a %s. Ara podeu tornar a entrar al lloc i utilitzar-lo.';
-$string['yournewpassword'] = 'Contrasenya nova';
+$string['yournewpassword'] = 'Contrasenya nova. La vostra contrasenya ha de tenir com a mínim 6 caràcters. Les contrasenyes distingeixen entre majúscules i minúscules i han de ser diferents del nom d\'usuari.<br />
+Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
 $string['yournewpasswordagain'] = 'Repetiu la contrasenya nova';

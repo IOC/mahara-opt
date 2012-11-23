@@ -14,6 +14,7 @@ $string['strftimedaydatetime'] = '%%A, %%d %%B %%Y, %%l:%%M %%p';
 $string['strftimedayshort'] = '%%A, %%d %%B';
 $string['strftimedaytime'] = '%%a, %%k:%%M';
 $string['strftimemonthyear'] = '%%B %%Y';
+$string['strftimenotspecified'] = 'No s\'ha especificat';
 $string['strftimerecent'] = '%%d %%b, %%k:%%M';
 $string['strftimerecentfull'] = '%%a, %%d %%b %%Y, %%l:%%M %%p';
 $string['strftimerecentyear'] = '%%d %%b %%A, %%k:%%M';

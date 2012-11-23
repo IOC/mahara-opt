@@ -13,6 +13,7 @@ $string['errorbadlib'] = 'El fitxer SimpleSAMLPHP lib del directori %s no és co
 $string['errorbadssphp'] = 'El gestor de sessió SimpleSAMLphp  no és vàlid- no ha de ser phpsession';
 $string['errorbadssphplib'] = 'La configuració de la biblioteca SimpleSAMLphp noi és vàlida';
 $string['errormissinguserattributes1'] = 'Sembla que esteu autenticat però no rebem els atributs d\'usuari necessaris. Comproveu que el vostre proveïdor d\'identitat aporta els camps Noma, Cognom i Adreça de correu per l\'SSO a %s o informeu-ne a l\'administrador.';
+$string['errorregistrationenabledwithautocreate'] = 'Hi ha una institució que ha activat el registre. Per raons de seguretat això exclou l\'autocreació d\'usuaris.';
 $string['errorremoteuser'] = 'Si usersuniquebyusername no està  activat cal que coincideixi remoteuser';
 $string['errorretryexceeded'] = 'Heu superat el nombre màxim d\'intents (%s). Hi deu haver un problema amb el servei d\'identificació.';
 $string['institutionattribute'] = 'Atribut se la Institució (conté "%s")';
