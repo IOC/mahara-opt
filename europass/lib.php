@@ -402,11 +402,11 @@ abstract class ArtefactTypeEuropassComposite extends ArtefactTypeEuropass {
     }
 
     public static function get_common_js() {
-        $cancelstr = get_string('cancel');
-        $addstr = get_string('add');
-        $confirmlanguagedelstr = get_string('languagedeleteconfirm', 'artefact.europass');
-        $confirmdiplomadelstr = get_string('languagediplomadeleteconfirm', 'artefact.europass');
-        $confirmexperiencedelstr = get_string('languageexperiencedeleteconfirm', 'artefact.europass');
+        $cancelstr = json_encode(get_string('cancel'));
+        $addstr = json_encode(get_string('add'));
+        $confirmlanguagedelstr = json_encode(get_string('languagedeleteconfirm', 'artefact.europass'));
+        $confirmdiplomadelstr = json_encode(get_string('languagediplomadeleteconfirm', 'artefact.europass'));
+        $confirmexperiencedelstr = json_encode(get_string('languageexperiencedeleteconfirm', 'artefact.europass'));
         $js = <<<EOF
 var tableRenderers = {};
 
@@ -415,10 +415,10 @@ function toggleCompositeForm(type) {
     elemName = type + 'form';
     if (hasElementClass(elemName, 'hidden')) {
         removeElementClass(elemName, 'hidden');
-        $('add' + type + 'button').innerHTML = '{$cancelstr}';
+        $('add' + type + 'button').innerHTML = {$cancelstr};
     }
     else {
-        $('add' + type + 'button').innerHTML = '{$addstr}';
+        $('add' + type + 'button').innerHTML = {$addstr};
         addElementClass(elemName, 'hidden');
     }
 }
@@ -437,9 +437,9 @@ function compositeSaveCallback(form, data) {
 }
 
 function deleteComposite(type, id, artefact) {
-	confirmdelstr = '{$confirmlanguagedelstr}';
-	if (type == 'languagediploma') { confirmdelstr = '{$confirmdiplomadelstr}'; }
-	if (type == 'languageexperience') { confirmdelstr = '{$confirmexperiencedelstr}'; }
+	confirmdelstr = {$confirmlanguagedelstr};
+	if (type == 'languagediploma') { confirmdelstr = {$confirmdiplomadelstr}; }
+	if (type == 'languageexperience') { confirmdelstr = {$confirmexperiencedelstr}; }
     if (confirm(confirmdelstr)) {
         sendjsonrequest('compositedelete.json.php',
             {'id': id, 'artefact': artefact},
