@@ -87,7 +87,7 @@ function xmldb_artefact_europass_upgrade($oldversion=0) {
         }
     }
 
-    if ($oldversion < 2012051000) {
+    if ($oldversion < 2012030200) {
 		// Create 'artefact_europass_otherlanguage_diploma' table...
         $table = new XMLDBTable('artefact_europass_languagediploma');
         $table->addFieldInfo('id', XMLDB_TYPE_INTEGER, 10, null, XMLDB_NOTNULL, XMLDB_SEQUENCE);
