@@ -72,6 +72,10 @@ $string['changeviewtheme'] = 'El tema que heu seleccionat ja no està disponible
 $string['choosetemplategrouppageandcollectiondescription'] = '<p>Aquí podeu buscar a través de les pàgines que aquest grup està autoritzat a copiar com a punt de partida per a la creació d\'una nova pàgina. Podreu veure una vista prèvia de cada pàgina fent clic al seu nom. Quan hagueu trobat la pàgina que voleu copiar, feu clic al corresponent botó "Copia pàgina" per fer-ne una còpia i començar a personalitzar-la. També podeu optar per copiar tota la col·lecció a la que pertany la pàgina amb el corresponent botó "Copia col·lecció".</p><strong> Nota: </strong> Actualment els grups no poden copiar ni diaris, ni entrades de diari , ni plans ni la informació del currículum vitae.</p>';
 $string['choosetemplateinstitutionpageandcollectiondescription'] = '<p>Aquí podeu buscar a través de les pàgines que aquesta institució està autoritzada a copiar com a punt de partida per a la creació d\'una nova pàgina. Podreu veure una vista prèvia de cada pàgina fent clic al seu nom. Quan hagueu trobat la pàgina que voleu copiar, feu clic al corresponent botó "Copia pàgina" per fer-ne una còpia i començar a personalitzar-la. També podeu optar per copiar tota la col·lecció a la que pertany la pàgina amb el corresponent botó "Copia col·lecció".</p><strong> Nota: </strong> Actualment les institucions no poden copiar ni diaris, ni entrades de diari , ni plans ni la informació del currículum vitae.</p>';
 $string['choosetemplatepageandcollectiondescription'] = '<p>Aquí podeu buscar les pàgines que esteu autoritzat a copiar com a punt de partida per a la creació d\'una nova pàgina. <br />Podeu veure una vista prèvia de cada pàgina fent clic sobre el seu nom. <br />Quan hagueu trobat la pàgina que voleu copiar, feu clic al corresponent botó "Copia pàgina" per fer-vos-en una còpia i començar a personalitzar-la.<br /> També podeu optar per copiar la col·lecció sencera a la que pertany la pàgina  tot fent clic al botó "Copia col·lecció". </p>';
+$string['choosetemplatesitepageandcollectiondescription1'] = '<p>Des d\'aquí podeu buscar per les pàgines del lloc que es poden copiar com a punt de partida per crear una pàgina nova. Podeu veure una vista prèvia de cada pàgina si feu clic sobre el seu nom.<br />\r
+Un cop hagueu trobat la pàgina que voleu copiar, feu clic sobre el botó "Copia la pàgina" per fer-vos-en una còpia i començar a personalitzar-vos-la.<br />\r
+També podeu optar per copiar la col·lecció sencera a la qual pertany la pàgina tot fent clic sobre el botó "Copia la col·leccció".</p>\r
+<p><strong>Nota:</strong> Ara per ara no és possible obtenir còpies de diaris, entrades de Diari, Plans, i informacions del CVs.</p>';
 $string['clickformoreinformation'] = 'Feu clic per incloure més informació i espai per a la retroacció';
 $string['collectionsubmitted'] = 'S\'ha enviat la col·lecció';
 $string['collectionsubmittedtogroup'] = 'Aquesta col·lecció s\'ha enviat  a <a href="%s">%s</a>';
@@ -216,7 +220,7 @@ $string['secreturlupdated'] = 'S\'ha actualitzat la URL secreta';
 $string['selectaviewtocopy'] = 'Seleccioneu la pàgina que voleu copiar:';
 $string['share'] = 'Comparteix';
 $string['sharedby'] = 'Compartit per';
-$string['sharedviews'] = 'Pàgines compartides';
+$string['sharedbyme'] = 'Compartit per mi';
 $string['sharedviewsdescription'] = 'Aquesta pàgina mostra les pàgines compartides amb vós modificades darrerament o amb comentaris recents. Poden haver estat compartides directament amb vós, amb els amics o amb algun dels grups on pertanyeu.';
 $string['sharedwith'] = 'Compartit amb';
 $string['shareview'] = 'Comparteix la pàgina';
@@ -226,7 +230,9 @@ $string['sharewithmyinstitutions'] = 'Comparteix amb les meves institucions';
 $string['sharewithusers'] = 'Comparteix amb els usuaris';
 $string['show'] = 'Mostra';
 $string['startdate'] = 'Dia i hora d\'inici de l\'accés';
+$string['startdatemustbebeforestopdate'] = 'La data d\'inici ha de ser posterior a la data de finalització.';
 $string['stopdate'] = 'Dia i hora del final de l\'accés';
+$string['stopdatecannotbeinpast'] = 'La data de finalització no pot estar en el passat.';
 $string['submissionstogroup'] = 'Trameses a aquest grup';
 $string['submitconfirm'] = 'Si envieu \'%s\' a %s per avaluar no podreu editar-ne els continguts fins que el vostre tutor hagi acabat de qualificar-la. Esteu segur que voleu enviar-la ara?';
 $string['submittedforassessment'] = 'Enviada per avaluació';

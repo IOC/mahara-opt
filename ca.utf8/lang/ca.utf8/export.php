@@ -11,7 +11,6 @@ $string['clicktopreview'] = 'Feu clic per previsualitzar';
 $string['collectionstoexport'] = 'Col·leccions per exportar';
 $string['creatingzipfile'] = 'S\'està creant el fitxer comprimit';
 $string['exportgeneratedsuccessfully'] = 'S\'ha generat correctament el fitxer d\'exportació. %sCliqueu aquí per descarregar-lo%s';
-$string['exportgeneratedsuccessfullyjs'] = 'S\'ha generat correctament el fitxer d\'exportació. %sContinua%s';
 $string['exportingartefactplugindata'] = 'S\'estan exportant les dades dels artefactes connectors';
 $string['exportingartefacts'] = 'S\'estan exportant els artefactes';
 $string['exportingartefactsprogress'] = 'S\'estan exportant els artefactes: %s/%s';

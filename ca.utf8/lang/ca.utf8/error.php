@@ -48,6 +48,7 @@ $string['jsonextensionnotloaded'] = 'La configuració del servidor no inclou l\'
 $string['magicquotesgpc'] = 'Teniu una configuració de PHP de risc: magic_quotes_gpc està activat. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
 $string['magicquotesruntime'] = 'Teniu una configuració de PHP de risc: magic_quotes_runtime està activat. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
 $string['magicquotessybase'] = 'Teniu una configuració de PHP de risc:, magic_quotes_sybase is on. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
+$string['mbstringneeded'] = 'Instal·leu d\'extensió de PHP mbstring. És necessària si teniu caràcters UTF-8 als noms d\'usuari, en cas contrari eñs usuaris no podran identificar-se.';
 $string['missingparamblocktype'] = 'Proveu primer a seleccionar el tipus de bloc per afegir';
 $string['missingparamcolumn'] = 'No s\'ha trobat la columna d\'especificació';
 $string['missingparamid'] = 'No s\'ha trobat id';

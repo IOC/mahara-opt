@@ -13,6 +13,7 @@ $string['Order'] = 'Ordena';
 $string['Post'] = 'Envia l\'entrada';
 $string['Poster'] = 'Autor de l\'entrada';
 $string['Posts'] = 'Entrades';
+$string['Re:'] = 'Re: ';
 $string['Reply'] = 'Respon';
 $string['Sticky'] = 'Enganxós';
 $string['Subject'] = 'Assumpte';

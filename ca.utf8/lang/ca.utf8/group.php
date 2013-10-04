@@ -30,9 +30,7 @@ $string['addedtofriendslistsubject'] = 'Amic nou';
 $string['addedtogroupmessage'] = '%s us ha afegit al grup \'%s\'.  Cliqueu sobre l\'enllaç per veure\'l.';
 $string['addedtogroupsmessage'] = '%s us ha afegit al(s) grup(s):
 
-%s
-
-';
+%s';
 $string['addedtogroupsubject'] = 'Se us ha afegit al grup';
 $string['addmembers'] = 'Afegeix membres';
 $string['addnewinteraction'] = 'Afegeix nou %s';
@@ -98,11 +96,17 @@ $string['deletespecifiedgroup'] = 'Esborra el grup \'%s\'';
 $string['denyfriendrequest'] = 'Denegueu la sol·licitud d\'amistat';
 $string['denyfriendrequestlower'] = 'Denega la sol·licitud d\'amistat';
 $string['denyrequest'] = 'Denega la sol·licitud';
+$string['editability'] = 'Possibilitats d\'edició';
+$string['editable'] = 'Editable';
 $string['editgroup'] = 'Edita grup';
 $string['editgroupmembership'] = 'Edita la pertinença del grup';
 $string['editmembershipforuser'] = 'Edita la pertinença de %s';
 $string['editroles'] = 'Crea i edita pàgines';
 $string['editrolesdescription'] = 'Rols amb permisos per crear i editar les pàgines del grup.';
+$string['editwindowbetween'] = 'Entre';
+$string['editwindowendbeforestart'] = 'La data de finalització ha de ser posterior a la d\'inici.';
+$string['editwindowfrom'] = 'Des de';
+$string['editwindowuntil'] = 'Fins a';
 $string['existingfriend'] = 'Aquest usuari ja és amic';
 $string['extcommenters'] = 'No-membres implicats';
 $string['findnewfriends'] = 'Cerca nous amics';
@@ -155,6 +159,7 @@ $string['grouprequestsubject'] = 'Sol·licitud de Pertinença al grup';
 $string['groups'] = 'grups';
 $string['groupsaved'] = 'S\'ha desat correctament el grup';
 $string['groupsharedviewsscrolled'] = 'Us heu desplaçat més enllà del final de la llista de pàgines compartides.';
+$string['groupsicanjoin'] = 'Grups als quals em puc unir';
 $string['groupsimin'] = 'Tots els grups als que pertanyo';
 $string['groupsiminvitedto'] = 'Grups on estic convidat';
 $string['groupsiown'] = 'Grups que tinc';
@@ -265,9 +270,7 @@ $string['removedfromfriendslistmessagereason'] = '%s us ha esborrat de la seva l
 $string['removedfromfriendslistsubject'] = 'Esborrat de la llista d\'amics';
 $string['removedfromgroupsmessage'] = '%s us ha tret del(s) grup(s):
 
-%s
-
-';
+%s';
 $string['removefriend'] = 'Amic esborrat';
 $string['removefromfriends'] = 'Esborra %s de la llista d\'amics';
 $string['removefromfriendslist'] = 'Esborra\'l com amic';
@@ -329,6 +332,10 @@ $string['viewreleasedmessage'] = '%s ha publicat la vostra pàgina "%s" de %s';
 $string['viewreleasedsubject'] = '%s ha publicat la vostra pàgina "%s" de %s';
 $string['viewreleasedsuccess'] = 'S\'ha publicat correctament la pàgina';
 $string['whymakemeyourfriend'] = 'Aquesta és la raó per la qual m\'hauríeu de fer amistat:';
+$string['windowend'] = 'Data de finalització';
+$string['windowenddesc'] = 'Després d\'aquesta data els membres no podran editar el grup';
+$string['windowstart'] = 'Data d\'inici';
+$string['windowstartdesc'] = 'Abans d\'aquesta data els membres no podran editar el grup';
 $string['youaregroupadmin'] = 'Sou administrador en aquest grup';
 $string['youaregroupmember'] = 'Sou membre d\'aquest grup';
 $string['youowngroup'] = 'Aquest grup és vostre';

@@ -105,7 +105,6 @@ $string['count_usr_institution'] = 'Nombre d\'usuaris en institucions';
 $string['count_views'] = 'Nombre de pàgines';
 $string['dbtype'] = 'Tipus de base de dades';
 $string['enablenetworking'] = 'Mode \'en xarxa\' activat';
-$string['fieldname'] = 'aquí va la traducció';
 $string['installation_key'] = 'Clau d\'instal·lació';
 $string['lang'] = 'Idioma';
 $string['newstats'] = 'Estadístiques noves';

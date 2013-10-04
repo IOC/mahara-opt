@@ -75,6 +75,10 @@ $string['nofilesattachedtothispost'] = 'No hi ha adjuncions';
 $string['noimageshavebeenattachedtothispost'] = 'No s\'han adjuntat imatges a aquesta entrada. Heu de carregar o adjuntar una imatge a l\'entrada abans de poder-la inserir.';
 $string['nopostsyet'] = 'Encara no hi ha entrades.';
 $string['noresults'] = 'No s\'ha trobat cap entrada';
+$string['nposts'] = array(
+    0 => '1 entrada',
+    1 => '%s entrades',
+);
 $string['olderposts'] = 'Entrades més antigues';
 $string['pluginname'] = 'Diaris';
 $string['post'] = 'entrada';

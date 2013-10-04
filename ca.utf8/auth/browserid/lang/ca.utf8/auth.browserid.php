@@ -12,5 +12,6 @@ $string['emailclaimedasusername'] = 'Hi ha un altre compte d\'usuari que utilitz
 $string['emailnotfound'] = 'No s\'ha trobat cap usuari amb l\'adreça de correu %s en cap institució on l\'ID del navegador està activat.';
 $string['login'] = 'Inici de sessió del ID del navegador';
 $string['missingassertion'] = 'L\'ID del navegador no retorna una asserció alfanumèrica.';
+$string['notusable'] = 'Cal que instal·leu l\'extensió de PHP cURL i comproveu la connexió amb el verificador del BrowserID (persona: https://login.persona.org/)';
 $string['register'] = 'Registre de l\'ID del navegador';
 $string['title'] = 'ID del navegador';

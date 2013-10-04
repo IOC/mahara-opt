@@ -5,7 +5,7 @@ defined('INTERNAL') || die();
 $string['Photo'] = 'Foto';
 $string['by'] = 'de';
 $string['cannotdisplayslideshow'] = 'No es pot mostrar la presentació de diapositives';
-$string['description'] = 'Una col·lecció d\'imatges de la vostra àrea de fitxers.';
+$string['description1'] = 'Una col·lecció d\'imatges de la vostra àrea de fitxers o una galeria externa.';
 $string['externalgalleryurl'] = 'URL o RSS de la galeria';
 $string['externalgalleryurldesc'] = 'Podeu incrustar les següents galeries externes';
 $string['externalnotsupported'] = 'L\'adreça URL externa que heu donat no és compatible';

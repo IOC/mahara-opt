@@ -8,6 +8,7 @@ $string['element.bytes.invalidvalue'] = 'El valor ha de ser un número';
 $string['element.bytes.kilobytes'] = 'Kilobytes';
 $string['element.bytes.megabytes'] = 'Megabytes';
 $string['element.calendar.invalidvalue'] = 'La data o el temps especificats no són vàlids';
+$string['element.date.at'] = 'a';
 $string['element.date.monthnames'] = 'Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre';
 $string['element.date.notspecified'] = 'No especificat';
 $string['element.date.or'] = 'o';
