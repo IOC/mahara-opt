@@ -223,6 +223,7 @@ $string['sharedby'] = 'Compartit per';
 $string['sharedbyme'] = 'Compartit per mi';
 $string['sharedviewsdescription'] = 'Aquesta pàgina mostra les pàgines compartides amb vós modificades darrerament o amb comentaris recents. Poden haver estat compartides directament amb vós, amb els amics o amb algun dels grups on pertanyeu.';
 $string['sharedwith'] = 'Compartit amb';
+$string['sharedwithme'] = 'Compartit amb mi';
 $string['shareview'] = 'Comparteix la pàgina';
 $string['sharewith'] = 'Comparteix amb';
 $string['sharewithmygroups'] = 'Comparteix amb els meus grups';
