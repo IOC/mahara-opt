@@ -38,6 +38,7 @@ $string['interests'] = 'Interessos';
 $string['introduction'] = 'Introducció';
 $string['jobdescription'] = 'Descripció del lloc de treball';
 $string['jobtitle'] = 'Feina';
+$string['license'] = 'Llicència';
 $string['male'] = 'Home';
 $string['maritalstatus'] = 'Estat civil';
 $string['membership'] = 'Associacions professionals';

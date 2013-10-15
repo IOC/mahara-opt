@@ -17,6 +17,7 @@ $string['invalidurl'] = 'La URL no és vàlida. Només podeu veure alimentacions
 $string['itemstoshow'] = 'Ítems per mostrar';
 $string['itemstoshowdescription'] = 'Entre 1 i 20';
 $string['lastupdatedon'] = 'Darrera actualització %s';
+$string['reenterpassword'] = 'Heu canviat la URL del canal, torneu a introduir (o suprimiu) la contrasenya.';
 $string['showfeeditemsinfull'] = 'Voleu mostrar els ítems sencers?';
 $string['showfeeditemsinfulldesc'] = 'Marqueu per veure el resum i la descripció de cada ítem. El resultat, però, dependrà de com està construïda l\'alimentació en origen';
 $string['title'] = 'Alimentació RSS externa';
