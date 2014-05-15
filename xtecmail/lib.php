@@ -107,6 +107,7 @@ class xtecmail {
     }
 
     private function soap_call($request, $action) {
+        libxml_disable_entity_loader(false);
         try {
             $client = new soapclient($this->wsdl, array('trace' => 1, 'connection_timeout' => 120));
             $response = $client->__doRequest($request, $this->environment.'?wsdl', $action, SOAP_1_1, 0);
