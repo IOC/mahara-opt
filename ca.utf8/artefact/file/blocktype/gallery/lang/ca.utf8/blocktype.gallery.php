@@ -1,0 +1,44 @@
+<?php
+
+defined('INTERNAL') || die();
+
+$string['Photo'] = 'Foto';
+$string['by'] = 'de';
+$string['cannotdisplayslideshow'] = 'No es pot mostrar la presentació de diapositives';
+$string['description1'] = 'Una col·lecció d\'imatges de la vostra àrea de fitxers o una galeria externa.';
+$string['externalgalleryurl'] = 'URL o RSS de la galeria';
+$string['externalgalleryurldesc'] = 'Podeu incrustar les següents galeries externes';
+$string['externalnotsupported'] = 'L\'adreça URL externa que heu donat no és compatible';
+$string['flickrapikey'] = 'Clau Flickr API (Flickr API key)';
+$string['flickrapikeydesc'] = 'Per mostrar fotos de Flickr necessitareu una Clau Flickr API (Flickr API key) vàlida. <a href="http://www.flickr.com/services/api/keys/apply/" target="_blank">Demana una clau</a>.';
+$string['flickrsets'] = 'Configura Flickr';
+$string['flickrsettings'] = 'Configuració de Flickr';
+$string['gallerysettings'] = 'Configuració de la galeria';
+$string['panoramiocopyright'] = 'Les fotos de Panoramio estan sota el copyright dels seus propietaris.';
+$string['panoramiouserphotos'] = 'Fotos de l\'usuari de Panoramio';
+$string['pbapikey'] = 'Clau Photobucket API (Photobucket API key)';
+$string['pbapikeydesc'] = 'Per mostrar àlbums de fotos de Photobucket necessiteu una clau Photobucket API (Photobucket API key) i una clau privada API vàlides.<br>Aneu al <a href="http://developer.photobucket.com/" target="_blank">lloc web de desenvolupament de Photobucket </a>, accepteu els termes del servei, inscriviu-vos-hi i aconseguiu les claus.';
+$string['pbapiprivatekey'] = 'Clau privada Photobucket API (Photobucket API private key)';
+$string['pbsettings'] = 'Configuració de Photobucket';
+$string['photobucketphotosandalbums'] = 'Fotos i àlbums de l\'usuari de Photobucket';
+$string['photoframe'] = 'Voleu posar un marc a la foto?';
+$string['photoframedesc'] = 'Si està activat, aleshores es veurà un marc al voltant de la miniatura de cada foto de la galeria.';
+$string['picasaalbums'] = 'Àlbums de Picassa';
+$string['previewwidth'] = 'Amplada màxima de la foto';
+$string['previewwidthdesc'] = 'Configureu l\'amplada màxima a la que s\'escalaran les fotos quan es vegin a Slimbox2.';
+$string['select'] = 'Selecció d\'imatges';
+$string['selectexternal'] = 'Mostra imatges d\'una galeria externa';
+$string['selectfolder'] = 'Mostra totes les imatges d\'una carpeta (S\'hi afegiran les imatges que hi carregueu més endavant).';
+$string['selectimages'] = 'Escolliu les imatges individuals que s\'hi mostraran';
+$string['showdescriptions'] = 'Mostra les descripcions';
+$string['showdescriptionsdescription'] = 'Seleccioneu subtitular cada imatge amb la seva descripció.';
+$string['style'] = 'Estil';
+$string['styleslideshow'] = 'Presentació de diapositives';
+$string['stylesquares'] = 'Miniatures (quadrades)';
+$string['stylethumbs'] = 'Miniatures';
+$string['title'] = 'Galeria d\'imatges';
+$string['useslimbox2'] = 'Voleu usar Slimbox 2?';
+$string['useslimbox2desc'] = 'Slimbox 2 (un clon visual de Lightbox 2) és un script senzill i discret que s\'utilitza per superposar imatges a la pàgina actual.';
+$string['width'] = 'Amplada';
+$string['widthdescription'] = 'Especifiqueu l\'amplada de les imatges (en píxels). Les imatges s\'escalaran a aquesta amplada.';
+$string['windowslivephotoalbums'] = 'àlbums de Windows Live Photo Gallery';
