@@ -50,7 +50,7 @@ $string['jsonextensionnotloaded'] = 'La configuració del servidor no inclou l\'
 $string['magicquotesgpc'] = 'Teniu una configuració de PHP de risc: magic_quotes_gpc està activat. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
 $string['magicquotesruntime'] = 'Teniu una configuració de PHP de risc: magic_quotes_runtime està activat. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
 $string['magicquotessybase'] = 'Teniu una configuració de PHP de risc:, magic_quotes_sybase is on. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';
-$string['mbstringneeded'] = 'Instal·leu d\'extensió de PHP mbstring. És necessària si teniu caràcters UTF-8 als noms d\'usuari, en cas contrari eñs usuaris no podran identificar-se.';
+$string['mbstringneeded'] = 'Instal·leu d\'extensió de PHP mbstring. És necessària si als noms d\'usuari hi teniu caràcters UTF-8. En cas contrari els usuaris no podran identificar-se.';
 $string['missingparamblocktype'] = 'Proveu primer a seleccionar el tipus de bloc per afegir';
 $string['missingparamcolumn'] = 'No s\'ha trobat la columna d\'especificació';
 $string['missingparamid'] = 'No s\'ha trobat id';
@@ -84,7 +84,7 @@ $string['safemodeon'] = 'Sembla que el servidor està funcionant en safe mode. M
 Si esteu en un hosting compartit és difícil que pugueu desactivar safe_mode a no ser que contacteu amb l\'administrador del lloc. Potser caldrà que considereu canviar-vos de lloc.';
 $string['sessionextensionnotloaded'] = 'La configuració del servidor no inclou l\'extensió session. Mahara la necessita per donar suport al registre d\'usuaris. Assegureu-vos que es carrega a php.ini o instal·leu-la si cal.';
 $string['sessionpathnotwritable'] = 'No es pot escriure al vostre directori de dades de sessió, %s. Cal que creeu el directori si no existís o  —si existeix— donar-li a l\'usuari del servidor permisos de propietari.';
-$string['smallpostmaxsize'] = 'La vostra configuració (%s) per a PHP post_max_size és molt petita. Les càrrgues de fitxers superiros a %s fallaran i no mostraran cap missatge d\'error.';
+$string['smallpostmaxsize'] = 'La vostra configuració per a PHP post_max_size és molt petita  (%s). Les càrregues de fitxers superiors a %s fallaran i no apareixerà cap missatge d\'error.';
 $string['switchtomysqli'] = 'L\'extensió PHP <strong>mysqli</strong> no està instal·lada al servidor. Per això Mahara està tornant a l\'extensió PHP  <strong>mysql</strong> original i obsoleta. Es recomana instal·lar <a href="http://php.net/manual/en/book.mysqli.php">mysqli</a>.';
 $string['themenameinvalid'] = 'El nom del tema \'%s\' conté caràcters no vàlids';
 $string['timezoneidentifierunusable'] = 'El PHP del vostre lloc no retorna un valor útil per l\'identificador de la zona horària (%%z). Es podria trencar el format d\'algunes dades, com ara l\'exportació en Leap2 . Aquest problema normalment es deu a una limitació de l\'execució de PHP a Windows.';

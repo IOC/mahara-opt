@@ -235,6 +235,7 @@ $string['profilenotshared'] = 'Està restingit l\'accés total al perfil d\'aque
 $string['profileviewtitle'] = 'pàgina del perfil';
 $string['public'] = 'Públic';
 $string['publicaccessnotallowed'] = 'La vostra institució o l\'administrador han desactivat les pàgines públiques i les URLs públiques. Qualsevol URL secreta que pugueu veure llistada està ara mateix desactivada.';
+$string['publicaccessnotallowedforprobation'] = 'Els usuaris acabats de registrar no tenen permisos per crear URLs secretes';
 $string['reallyaddaccesstoemptyview'] = 'La vostra pàgina no conté cap bloc. Esteu segur que voleu donar-hi accés a aquests usuaris?';
 $string['reallydeletesecreturl'] = 'Esteu segur que voleu eliminar aquesta URL?';
 $string['remove'] = 'Elimina';
