@@ -4,7 +4,7 @@ defined('INTERNAL') || die();
 
 $string['accountdeleted'] = 'S\'ha eliminat el vostre compte.';
 $string['accountoptionsdesc'] = 'Aquí podeu configurar les opcions generals del compte';
-$string['badmobileuploadtoken'] = 'Aquest token (testimoni d\'autenticació) mòbil no és vàlid. Els tokens han de tenir com a mínim una longitud de 6 caràcters';
+$string['badmobileuploadtoken'] = 'Aquest testimoni d\'autenticació pel mòbil no és vàlid. Els testimonis han de tenir com a mínim una longitud de 6 caràcters';
 $string['changepassworddesc'] = 'Escriviu aquí la vostra informació si voleu canviar la contrasenya';
 $string['changepasswordotherinterface'] = 'Podeu  <a href="%s">canviar la contrasenya</a> des d\'una altra interfície</a>';
 $string['changeprofileurl'] = 'Canvia la URL del perfil';
@@ -37,7 +37,7 @@ $string['messagesallow'] = 'Permet que tothom m\'enviï missatges';
 $string['messagesdescr'] = 'Missatges d\'altres usuaris';
 $string['messagesfriends'] = 'Permet que només les persones de la llista d\'Amics m\'enviïn missatges';
 $string['messagesnobody'] = 'No permetis que ningú m\'enviï missatges';
-$string['mobileuploadtoken'] = 'Token (testimoni d\'autenticació) per la càrrega des del Mòbil';
+$string['mobileuploadtoken'] = 'Testimoni d\'autenticació per la càrrega des del Mòbil';
 $string['off'] = 'Desactivat';
 $string['oldpasswordincorrect'] = 'Aquesta no és la contrasenya actual';
 $string['on'] = 'Activat';
