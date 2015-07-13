@@ -1,20 +1,23 @@
 <?php
 
-class xtecmailerror extends Exception {}
+class xtecmailerror extends Exception {
+}
 
 class xtecmail {
 
     private $allowed_senders = array(
         'xtec' => 'correus_aplicacions.educacio@xtec.cat',
-        'gencat' =>'correus_aplicacions.educacio@gencat.cat',
+        'gencat' => 'correus_aplicacions.educacio@gencat.cat',
         'educacio' => 'apligest@correueducacio.xtec.cat',
     );
 
+
     private $allowed_environments = array(
-        'INT' => 'http://xtec-int.educacio.intranet:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        'ACC' => 'http://acc.xtec.cat:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
-        'PRO' => 'http://aplitic.xtec.cat:8080/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'INT' => 'http://integracio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'PRE' => 'http://preproduccio.bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu',
+        'PRO' => 'http://bus.ensenyament.intranet.gencat.cat/event/ServeisComuns/intern/EnviaCorreu/a1/EnviaCorreu'
     );
+
 
     private $idApp;
     private $sender;
@@ -34,7 +37,7 @@ class xtecmail {
         $this->wsdl = dirname(__FILE__) . '/wsdl-' . $environment . '.wsdl';
     }
 
-    function test() {
+    public function test() {
         $request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"';
         $request .= ' xmlns:cor="http://www.gencat.cat/educacio/sscc/correu">';
         $request .= '<soapenv:Body>';
@@ -52,7 +55,7 @@ class xtecmail {
         return $response->status == 'OK';
     }
 
-    function send($to=array(), $cc=array(), $bcc=array(), $replyAddress, $subject='',
+    public function send($to=array(), $cc=array(), $bcc=array(), $replyAddress, $subject='',
                   $bodyContent='', $bodyType='text/plain', $attachments=array()) {
         $request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"';
         $request .= ' xmlns:cor="http://www.gencat.cat/educacio/sscc/correu">';
@@ -100,20 +103,22 @@ class xtecmail {
         if ($response->status == 'KO') {
             throw new xtecmailerror(!empty($response->message) ? $response->message : '');
         }
-        $response = reset($response->respostaCorreu);
-        if ($response->status == 'KO') {
-            throw new xtecmailerror(!empty($response->message) ? $response->message : '');
+        foreach ($response->respostaCorreu as $r) {
+            if ($r->status == 'KO') {
+                throw new xtecmailerror(!empty($r->message) ? $r->message : '');
+            }
         }
     }
 
     private function soap_call($request, $action) {
-        libxml_disable_entity_loader(false);
+        $loadentities = libxml_disable_entity_loader(false);
         try {
             $client = new soapclient($this->wsdl, array('trace' => 1, 'connection_timeout' => 120));
             $response = $client->__doRequest($request, $this->environment.'?wsdl', $action, SOAP_1_1, 0);
         } catch (SoapFault $e) {
             throw new xtecmailerror($e->faultstring);
         }
+        libxml_disable_entity_loader($loadentities);
         if (!$response) {
             throw new xtecmailerror('empty response');
         }
