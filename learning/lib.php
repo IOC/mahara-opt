@@ -26,7 +26,7 @@
 
 defined('INTERNAL') || die();
 
-class PluginArtefactLearning extends Plugin {
+class PluginArtefactLearning extends PluginArtefact {
     
     public static function get_artefact_types() {
         return array(
