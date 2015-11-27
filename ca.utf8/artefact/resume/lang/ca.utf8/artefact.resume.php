@@ -24,6 +24,7 @@ $string['coverletter'] = 'Carta de presentació';
 $string['current'] = 'Actual';
 $string['date'] = 'Data';
 $string['dateofbirth'] = 'Data de naixement';
+$string['dateofbirthinvalid1'] = 'Aquesta data de naixement no és vàlida. Corregiu-la.';
 $string['description'] = 'Descripció';
 $string['detailsofyourcontribution'] = 'Detalls de la vostra contribució';
 $string['duplicateattachment'] = 'El fitxer \'%s\' ja s\'està utilitzant en una altra entrada d\'aquesta secció. No podeu usar el mateix fitxer dues vegades.';

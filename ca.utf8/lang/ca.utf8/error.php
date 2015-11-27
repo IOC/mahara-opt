@@ -16,7 +16,6 @@ $string['artefacttypeclassmissing'] = 'Tots els tipus d\'artefacte implementen u
 $string['artefacttypemismatch'] = 'El tipus d\'artefacte no s\\\'ajusta, esteu provant d\\\'usar aquest %s com a %s';
 $string['artefacttypenametaken'] = 'El tipus d\'artefacte %s l\'utilitza un altre connector (%s)';
 $string['blockconfigdatacalledfromset'] = 'No s\'ha de configurar directament Configdata, en el seu lloc utilitzeu PluginBlocktype::instance_config_save';
-$string['blockinstancednotfound'] = 'No s\'ha trobat la instància de bloc id %s';
 $string['blocktypelibmissing'] = 'No s\'ha trobat lib.php pel bloc %s al connector d\'artefactes %s';
 $string['blocktypemissingconfigform'] = 'El tipus de bloc %s ha d\'implementar al instància instance_config_form';
 $string['blocktypenametaken'] = 'El tipus de bloc %s l\'utilitza un altre connector (%s)';

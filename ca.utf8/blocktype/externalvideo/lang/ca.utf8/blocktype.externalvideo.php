@@ -7,6 +7,7 @@ $string['glogster'] = 'Glogster';
 $string['googlevideo'] = 'Google Vídeo';
 $string['height'] = 'Alçada';
 $string['invalidurl'] = 'URL no vàlida';
+$string['invalidurlorembed'] = 'La URL o el codi incrustat no són vàlids';
 $string['prezi'] = 'Prezi';
 $string['scivee'] = 'SciVee';
 $string['slideshare'] = 'SlideShare';
