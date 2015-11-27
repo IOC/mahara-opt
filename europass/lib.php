@@ -11,7 +11,7 @@
 
 defined('INTERNAL') || die();
 
-class PluginArtefactEuropass extends Plugin {
+class PluginArtefactEuropass extends PluginArtefact {
     
     public static function get_artefact_types() {
         return array(
@@ -503,9 +503,9 @@ EOF;
         $viewstr = get_string('groupmanage', 'admin'); // get_string('more...')
         $editstr = get_string('edit');
         $delstr = get_string('delete');
-        $imagelanguageinfo  = json_encode($THEME->get_url('images/manage.gif')); // displayview.gif
-        $imagemoveblockup   = json_encode($THEME->get_url('images/move-up.gif'));
-        $imagemoveblockdown = json_encode($THEME->get_url('images/move-down.gif'));
+        $imagelanguageinfo  = json_encode($THEME->get_url('images/btn_configure.png'));
+        $imagemoveblockup   = json_encode($THEME->get_url('images/btn_moveup.png'));
+        $imagemoveblockdown = json_encode($THEME->get_url('images/btn_movedown.png'));
         $upstr = get_string('moveup', 'artefact.europass');
         $downstr = get_string('movedown', 'artefact.europass');
 
