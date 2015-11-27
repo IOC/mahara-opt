@@ -121,7 +121,6 @@ $string['savepost'] = 'Desa';
 $string['savesettings'] = 'Desa la configuració';
 $string['settings'] = 'Configuració';
 $string['shortcutaddpost'] = 'Afegeix una nova entrada a';
-$string['shortcutgo'] = 'Vés';
 $string['shortcutnewentry'] = 'Afegeix entrada';
 $string['src'] = 'URL de la imatge';
 $string['textbottom'] = 'A baix de tot del text';

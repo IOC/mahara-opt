@@ -7,6 +7,7 @@ $string['Attachments'] = 'Adjuncions';
 $string['Comment'] = 'Comentari';
 $string['Comments'] = 'Comentaris';
 $string['Moderate'] = 'Modera';
+$string['addcomment'] = 'Afegeix un comentari';
 $string['allowcomments'] = 'Permet comentaris';
 $string['approvalrequired'] = 'Els comentaris són moderats, així que si trieu fer públic aquest comentari, no serà visible pels altres fins que no estigui aprovat pel seu titular.';
 $string['artefactdefaultpermissions'] = 'Permisos per defecte dels comentaris';

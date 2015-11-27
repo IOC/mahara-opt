@@ -68,7 +68,6 @@ $string['syncuserssettings'] = 'Sincronització d\'usuari';
 $string['syncusersupdate'] = 'Actualitza la informació de l\'usuari amb el cron';
 $string['title'] = 'LDAP';
 $string['updateuserinfoonlogin'] = 'Actualitza la informació de l\'usuari quan s\'identifiqui';
-$string['updateuserinfoonloginadnote'] = 'Nota: Si l\'activeu estalviareu posteriors identificacions a Mahara a altres llocs MS ActiveDirectory o usuaris.';
 $string['userattribute'] = 'Atribut de l\'usuari';
 $string['usertype'] = 'Tipus d\'usuari';
 $string['weautocreateusers'] = 'Es crearan els usuaris automàticament';
