@@ -130,7 +130,6 @@ $string['objectionabletopicdeletedbody'] = '%s ha estudiat el fil de fòrum de %
 El contingut del fil de fòrum amb objeccions era:
 %s';
 $string['objectionabletopicdeletedsubject'] = 'El fil de fòrum amb objeccions "%s" ha estat esborrat per %s.';
-$string['orderdescription'] = 'Trieu on voleu que vagi el fòrum en relació amb altres fòrums';
 $string['postaftertimeout'] = 'Heu fet el  canvi un cop superat el temps d\'espera de % s minuts. El canvi no s\'ha pogut aplicar.';
 $string['postbyuserwasdeleted'] = 'S\'ha esborrat l\'entrada de %s';
 $string['postdelay'] = 'Retard de l\'entrada';

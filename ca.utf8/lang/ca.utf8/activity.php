@@ -119,3 +119,5 @@ $string['unread'] = 'No llegit';
 $string['viewmodified'] = 'ha canviat la seva pàgina';
 $string['viewsubmittedmessage1'] = '%s ha presentat "%s" a %s';
 $string['viewsubmittedsubject1'] = 'Presentació a %s';
+$string['yourinboxisempty'] = 'La seva safata d\'entrada és buida.';
+$string['youroutboxisempty'] = 'La vostra safata de sortida és buida.';

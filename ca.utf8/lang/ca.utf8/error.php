@@ -4,6 +4,7 @@ defined('INTERNAL') || die();
 
 $string['accessdenied'] = 'Accés denegat';
 $string['accessdeniedexception'] = 'No teniu accés a veure aquesta pàgina';
+$string['accessdeniedobjection'] = 'Accés denegat. L\'objecció ja ha estat resolta per un altre administrador.';
 $string['apcstatoff'] = 'Sembla que el servidor està fent córrer APC amb apc.stat=0. Mahara no pot funcionar amb aquesta configuració. Heu de configurar apc.stat=1 al fitxer php.ini.
 
 Si esteu en un hosting compartit és difícil que pugueu activar apc.stat a no ser que contacteu amb l\'administrador del lloc. Potser caldrà que considereu canviar-vos de lloc.';
@@ -12,10 +13,12 @@ $string['artefactnotfoundmaybedeleted'] = 'No s\'ha trobat l\'artefacte amb id %
 $string['artefactnotinview'] = 'L\'artefacte %s no és a la Vista %s';
 $string['artefactonlyviewableinview'] = 'Els artefactes d\'aquest tipus només es poden veure dins una Vista';
 $string['artefactpluginmethodmissing'] = 'El connector d\'artefactes %s ha d\'implementar %s però no ho fa';
+$string['artefactsnotfound'] = 'No s\'ha trobat cap artefacte amb aquest ID: %s';
 $string['artefacttypeclassmissing'] = 'Tots els tipus d\'artefacte implementen una classe. No s\'ha trobat %s';
 $string['artefacttypemismatch'] = 'El tipus d\'artefacte no s\\\'ajusta, esteu provant d\\\'usar aquest %s com a %s';
 $string['artefacttypenametaken'] = 'El tipus d\'artefacte %s l\'utilitza un altre connector (%s)';
 $string['blockconfigdatacalledfromset'] = 'No s\'ha de configurar directament Configdata, en el seu lloc utilitzeu PluginBlocktype::instance_config_save';
+$string['blockinstancenotfound'] = 'No s\'ha trobat la instància de bloc id %s';
 $string['blocktypelibmissing'] = 'No s\'ha trobat lib.php pel bloc %s al connector d\'artefactes %s';
 $string['blocktypemissingconfigform'] = 'El tipus de bloc %s ha d\'implementar al instància instance_config_form';
 $string['blocktypenametaken'] = 'El tipus de bloc %s l\'utilitza un altre connector (%s)';

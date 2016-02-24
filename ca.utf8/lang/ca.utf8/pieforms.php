@@ -30,3 +30,4 @@ $string['rule.minvalue.minvalue'] = 'Aquest valor no pot ser menor que  %d';
 $string['rule.regex.regex'] = 'Aquest camp no té un format vàlid';
 $string['rule.required.required'] = 'Aquest camp és obligatori';
 $string['rule.validateoptions.validateoptions'] = 'L\'opció  "%s" no és vàlida';
+$string['switchbox.yes'] = 'Sí';

@@ -189,6 +189,7 @@ $string['nfolders'] = array(
     1 => 'carpetes %s',
 );
 $string['nofilesfound'] = 'No s\'ha trobat cap fitxer';
+$string['nofolderformove'] = 'No hi ha cap directori per moure';
 $string['noimagesfound'] = 'No s\'ha trobat cap imatge';
 $string['notpublishable'] = 'No teniu permisos per publicar aquest fitxer';
 $string['nprofilepictures'] = array(

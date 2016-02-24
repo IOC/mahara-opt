@@ -36,6 +36,7 @@ $string['name'] = 'Nom del lloc';
 $string['noauthpluginconfigoptions'] = 'No hi ha cap opció de configuració associada a aquest connector';
 $string['nodataforinstance'] = 'No s\'han trobat dades per la instància d\'autenticació ';
 $string['parent'] = 'Autoritat pare';
+$string['port'] = 'Port';
 $string['primaryemaildescription'] = 'L\'adreça de correu principal. Rebreu un missatge de correu amb un enllaç clicable. Seguiu-lo per validar l\'adreça i registrar-vos al sistema.';
 $string['protocol'] = 'Protocol';
 $string['requiredfields'] = 'Camps del perfil requerits';

@@ -26,6 +26,7 @@ $string['confirmcancelregistration'] = 'Esteu segurs que voleu cancel·lar el re
 $string['confirmemailsubject'] = 'Confirmeu el correu de registre a %s';
 $string['description'] = 'Us autentica contra una base de dades de Mahara';
 $string['emailalreadytaken'] = 'Aquesta adreça de correu ja ha estat registrada al lloc';
+$string['emailalreadytakenbyothers'] = 'Aquesta adreça de correu ja ha estat agafada per un altre usuari.';
 $string['emailconfirmedok'] = '<p>Heu confirmat el correu de registre amb èxit. Molt aviat us notificarem més detalls del registre. </p>';
 $string['iagreetothetermsandconditions'] = 'Estic d\'acord amb els Termes i Condicions';
 $string['internal'] = 'Interna';
