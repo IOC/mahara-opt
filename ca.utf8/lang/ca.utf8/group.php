@@ -28,10 +28,19 @@ $string['acceptinvitegroup'] = 'Accepto';
 $string['addedtofriendslistmessage'] = 'S\'ha afegit %s com amic vostre. Això vol dir que %s és ara a la vostra llista d\'amics.  Feu clic al següent enllaç per veure el seu perfil';
 $string['addedtofriendslistsubject'] = 'Amic nou';
 $string['addedtogroupmessage'] = '%s us ha afegit al grup \'%s\'.  Cliqueu sobre l\'enllaç per veure\'l.';
-$string['addedtogroupsmessage'] = '%s us ha afegit al(s) grup(s):
-
-%s';
 $string['addedtogroupsubject'] = 'Se us ha afegit al grup';
+$string['addedtongroupsmessage'] = array(
+    0 => '%2$s us ha afegit al grup:
+
+%3$s
+
+',
+    1 => '%2$s us ha afegit als grups:
+
+%3$s
+
+',
+);
 $string['addmembers'] = 'Afegeix membres';
 $string['addnewinteraction'] = 'Afegeix nou %s';
 $string['addtofriendsfailed'] = 'No s\'ha pogut afegir %s a la vostra llista d\'amics.';
@@ -57,7 +66,6 @@ $string['alreadyfriends'] = 'Ja sou amic de %s';
 $string['approve'] = 'Aprova';
 $string['approverequest'] = 'Aprova la sol·licitud';
 $string['backtofriendslist'] = 'Torna a la llista d\'amics';
-$string['cannotinvitetogroup'] = 'No podeu convidar aquest usuari a aquest grup';
 $string['cannotrequestfriendshipwithself'] = 'No podeu demanar-vos amistat a vós mateix';
 $string['cannotrequestjoingroup'] = 'No podeu sol·licitar la Pertinença a aquest grup';
 $string['cantdeletegroup'] = 'No podeu esborrar aquest grup';
@@ -71,7 +79,6 @@ $string['cantremovememberfromgroup'] = 'No podeu leiminar usuaris de %s';
 $string['cantrequestfriendship'] = 'No podeu demanar amistat amb aquest usuari';
 $string['cantviewmessage'] = 'No podeu veure aquest missatge';
 $string['categoryunassigned'] = 'No assignar categoria';
-$string['changedgroupmembership'] = 'S\'ha actualitzat correctament la pertinença al grup.';
 $string['changedgroupmembershipsubject'] = 'S\'ha canviat la pertinença al vostre grup';
 $string['changerole'] = 'Canvia de rol';
 $string['changerolefromto'] = 'Canvia el rol de %s a';
@@ -91,7 +98,6 @@ $string['currentfriends'] = 'Amics actuals';
 $string['currentrole'] = 'Rol actual';
 $string['declineinvitegroup'] = 'Declino';
 $string['declinerequest'] = 'Declina sol·licitud';
-$string['declinerequestsuccess'] = 'S\'ha declinat la sol·licitud de pertinença.';
 $string['deletegroup'] = 'S\'ha esborrat correctament el grup';
 $string['deletegroup1'] = 'Esborra el Grup';
 $string['deletegroupnotificationmessage'] = 'Ereu membre del grup %s a %s però ara aquest grup s\'ha eliminat.';
@@ -115,8 +121,6 @@ $string['editwindowfrom'] = 'Des de';
 $string['editwindowuntil'] = 'Fins a';
 $string['existingfriend'] = 'Aquest usuari ja és amic';
 $string['extcommenters'] = 'No-membres implicats';
-$string['feedbacknotify'] = 'Notificacions de comentaris';
-$string['feedbacknotifydescription1'] = 'Seleccioneu quins membres del grup han de rebre una notificació quan es fa un comentari en una pàgina del grup o als artefactes.';
 $string['findnewfriends'] = 'Cerca nous amics';
 $string['friend'] = 'amic';
 $string['friendformacceptsuccess'] = 'Sol·licitud d\'amistat acceptada';
@@ -256,6 +260,10 @@ $string['notmembermayjoin'] = 'Per poder veure aquesta pàgina cal que us uniu a
 $string['notpublic'] = 'Aquest grup no és públic.';
 $string['noviewssharedwithgroupyet'] = 'Encara no hi ha cap pàgina compartida amb aquest grup.';
 $string['noviewstosee'] = 'No hi ha res que pugueu veure :(';
+$string['nrecommendationssent'] = array(
+    0 => 'S\'ha enviat 1 recomanació',
+    1 => 'S\'han enviat %d recomanacions',
+);
 $string['opendescription'] = 'Els usuaris es poden unir al grup sense l\'aprovació dels administradors.';
 $string['pending'] = 'pendent';
 $string['pendingfriends'] = 'Amics pendents';
@@ -267,7 +275,6 @@ $string['publiclyviewablegroupdescription1'] = 'Permet a tothom d\'Internet que 
 $string['publiclyvisible'] = 'Visible públicament';
 $string['reason'] = 'Raó';
 $string['reasonoptional'] = 'Raó (opcional)';
-$string['recommendationssent'] = 'S\'han enviat %d recomanacions';
 $string['reject'] = 'Rebutja';
 $string['rejectfriendshipreason'] = 'Raó per rebutjar la sol·licitud';
 $string['releasecollection'] = 'Publica la col·lecció';
@@ -276,9 +283,18 @@ $string['remove'] = 'Esborra';
 $string['removedfromfriendslistmessage'] = '%s us ha esborrat de la seva llista d\'amics.';
 $string['removedfromfriendslistmessagereason'] = '%s us ha esborrat de la seva llista d\'amics. La raó és: ';
 $string['removedfromfriendslistsubject'] = 'Esborrat de la llista d\'amics';
-$string['removedfromgroupsmessage'] = '%s us ha tret del(s) grup(s):
+$string['removedfromngroupsmessage'] = array(
+    0 => '%2$s us ha tret del grup:
 
-%s';
+%3$s
+
+',
+    1 => '%2$s  us ha tret dels grups::
+
+%3$s
+
+',
+);
 $string['removefriend'] = 'Amic esborrat';
 $string['removefromfriends'] = 'Esborra %s de la llista d\'amics';
 $string['removefromfriendslist'] = 'Esborra\'l com amic';

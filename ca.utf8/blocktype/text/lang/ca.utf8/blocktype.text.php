@@ -7,14 +7,6 @@ $string['convertdescription'] = array(
     0 => 'Hi ha %s anotació que es pot convertir. Si seleccioneu l\'opció de convertir-la cal que tingueu en compte que el procés pot trigar un cert temps. Un cop feta la conversió veureu un missatge en aquesta pàgina.',
     1 => 'Hi ha %s anotacions que es poden convertir. Si seleccioneu l\'opció de convertir-les cal que tingueu en compte que el procés pot trigar un cert temps. Un cop feta la conversió veureu un missatge en aquesta pàgina.',
 );
-$string['convertdescriptionfeatures'] = 'Podeu convertir tots els blocs reutilitzables "Anotació" que no utilitzin cap característica avançada en simples blocs de "Text". Aquests blocs només existeixen en la pàgina on s\'han creat i no es poden fer servir en cap altra pàgina.  Les característiques avançades poden ser:
-    <ul>
-        <li>reutilització en un altre bloc</li>
-        <li>ús d\'una llicència</li>
-        <li>ús d\'etiquetes</li>
-        <li>adjuncions</li>
-        <li>retroaccions a les anotacions</li>
-    </ul>';
 $string['convertibleokmessage'] = array(
     0 => 'S\'ha convertit amb èxit un bloc "Anotació" en un de "Text"',
     1 => 'S\'han convertit amb èxit %d blocs "Anotació" en blocs de "Text"',

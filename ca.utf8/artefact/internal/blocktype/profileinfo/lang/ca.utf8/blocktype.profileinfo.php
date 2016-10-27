@@ -11,5 +11,4 @@ $string['fieldstoshow'] = 'Camps a mostrar';
 $string['introtext'] = 'Text d\'introducció';
 $string['showsocialprofiles'] = 'Mostra els comptes en els medis socials seleccionats';
 $string['title'] = 'Informació del perfil';
-$string['uploadaprofileicon'] = 'No teniu cap icona de perfil. <a href="%sartefact/file/profileicons.php" target="_blank">Carregueu-ne una</a>';
 $string['useintroductioninstead'] = 'Podeu deixar aquest camp en blanc i, en canvi, activar el camp d\'Introducció del vostre perfil.';

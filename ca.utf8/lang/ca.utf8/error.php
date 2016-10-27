@@ -77,7 +77,6 @@ $string['passwordsaltweak'] = 'La contrasenya salada per tot el lloc no és prou
 $string['pgsqldbextensionnotloaded'] = 'La configuració del servidor no inclou l\'extensió pgsql. Mahara la necessita per emmagatzemar dades en una base de dades relacional. Assegureu-vos que es carrega a php.ini o instal·leu-la si cal.';
 $string['phpversion'] = 'Mahara no funciona amb PHP < 5.1.3. Actualitzeu la versió del PHP  o canvieu la instal·lació de Mahara a un altre host.';
 $string['pleaseloginforjournals'] = 'Heu de sortir del sistema i tornar-hi a entrar per poder veure tots els diaris i entrades.';
-$string['plpgsqlnotavailable'] = 'La vostra instal·lació Postgres no té activat el llenguatge PL/pgSQL i Mahara no ho pot fer. Instal·leu manualment PL/pgSQL. Visiteu https://wiki.mahara.org/index.php/System_Administrator\'s_Guide/Enabling_Plpgsql per trobar instruccions sobre com fer-ho.';
 $string['postmaxlessthanuploadmax'] = 'La vostra configuració de PHP post_max_size setting (%s) és menor que la vostra configuració de  upload_max_filesize (%s). Les càrregues superiors a %s fallaran sense mostrar cap missatge d\'error. Usualment  post_max_size ha de ser molt més gran que upload_max_filesize.';
 $string['previewimagegenerationfailed'] = 'S\'ha produït un problema en generar la previsualització de la imatge.';
 $string['registerglobals'] = 'Teniu una configuració de PHP de risc: register_globals està activat. Mahara prova d\'ignorar-ho, però ho heu de solucionar.';

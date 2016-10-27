@@ -6,10 +6,6 @@ $string['blockheadingtags'] = array(
     0 => 'Entrades al diari amb l\'etiqueta %2$s',
     1 => 'Entrades al diari amb les etiquetes %2$s',
 );
-$string['blockheadingtagsomit'] = array(
-    0 => ' però no etiquetada amb %2$s',
-    1 => ' però no etiquetades amb %2$s',
-);
 $string['configerror'] = 'S\'ha produit un error mentre es configurava el bloc';
 $string['defaulttitledescription'] = 'Si ho deixeu en blanc es mostrarà el títol del diari';
 $string['description'] = 'Mostra les entrades de Diari amb una etiqueta particular';

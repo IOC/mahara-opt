@@ -99,13 +99,6 @@ $string['fonttypes.google'] = 'Tipus de lletra de Google';
 $string['fonttypes.site'] = 'Tipus de lletra locals';
 $string['fontvariantadded'] = 'S\'ha afegit correctament l\'estil del tipus de lletra';
 $string['genericfontfamily'] = 'Família del tipus de lletra  genèric';
-$string['gwfinstructions'] = '<ol>
-<li>Visiteu <a href="http://www.google.com/fonts/" target="_blank">Tipus de lletra de Google</a></li>
-<li>Seleccioneu un tipus de lletra i afegiu-lo a la vostra col·lecció</li>
-<li>Descarregueu els tipus de lletra d\'una col·lecció en un fitxer comprimit ZIP</li>
-<li>Carregueu aquest fitxer ZIP en aquest formulari</li>
-<li>Instal·leu els tipus de lletra de Google</li>
-</ol>';
 $string['gwfontadded'] = 'S\'han instal·lat satisfactòriament els tipus de lletra de Google.';
 $string['gwfontsnotavailable'] = 'Ara mateix no estan disponibles els tipus de lletra de Google';
 $string['gwfzipdescription'] = 'Un fitxer ZIP vàlid que conté tots els tipus de lletra de Google que voleu instal·lar.';

@@ -104,7 +104,6 @@ $string['subject'] = 'Tema';
 $string['type'] = 'Tipus d\'activitat';
 $string['typeadminmessages'] = 'Missatge de l\'Administració';
 $string['typecontactus'] = 'Contacta\'ns';
-$string['typefeedback'] = 'Retroacció';
 $string['typegroupmessage'] = 'Missatge del grup';
 $string['typeinstitutionmessage'] = 'Missatge de la Institució';
 $string['typemaharamessage'] = 'Missatge del sistema';

@@ -12,7 +12,6 @@ $string['feedlocation'] = 'Adreça de l\'alimentació';
 $string['feedlocationdesc'] = 'URL d\'una alimentació RSS o ATOM vàlida';
 $string['insecuresslmode'] = 'Mode SSL no segur';
 $string['insecuresslmodedesc'] = 'Desactiva la verificació del certificat SSL. No és recomanable però pot ser necessari si l\'alimentació se serveix utilitzant un certificat no vàlid o que no és de confiança.';
-$string['invalidfeed'] = 'Sembla que l\'alimentació no és vàlida. L\'error és: %s';
 $string['invalidurl'] = 'La URL no és vàlida. Només podeu veure alimentacions d\'URLs amb http i https.';
 $string['itemstoshow'] = 'Ítems per mostrar';
 $string['itemstoshowdescription'] = 'Entre 1 i 20';

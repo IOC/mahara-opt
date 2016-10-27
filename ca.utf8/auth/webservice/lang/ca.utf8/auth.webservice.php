@@ -76,11 +76,8 @@ $string['errorupdate'] = 'Ha fallat l\'actualització';
 $string['erroruser'] = 'S\'ha especificat un usuari no vàlid';
 $string['execute'] = 'Executa';
 $string['executed'] = 'S\'ha executat la crida a la funció';
-$string['existingserviceusers'] = 'No es pot commutar al testimoni només usuaris perquè els usuaris del servei estan lligats a aquest servei';
-$string['existingtokens'] = 'No es pot commutar a usuaris autoritzats del servei perquè el testimoni usuaris ja existeix en aquest servei';
 $string['expires'] = 'Caduca';
 $string['externalservice'] = 'Servei extern';
-$string['failedtolog'] = 'Ha fallat l\'autenticació';
 $string['fortokenusers'] = 'Accés per testimoni d\'usuari';
 $string['function'] = 'Funció';
 $string['functionname'] = 'Nom de la funció';
@@ -135,9 +132,7 @@ $string['key'] = 'Clau';
 $string['last_access'] = 'Darrer accés';
 $string['manage_certificates'] = 'Aquests són els Certificats generats com a part dels serveis  <a href="%s">de Xarxa</a>. \r
 Aquests valors els utilitza Mahara quan estan activats WS-Security Signatures i Encryption per a un  wstoken o usuari de servei particular (Només XML-RPC i  MNet heretat).';
-$string['manage_protocols'] = 'Activa o desactiva els protocols suportats per aquesta instal·lació:';
 $string['manageserviceusers'] = 'Usuaris del servei de gestió';
-$string['masterswitch'] = 'Commutador mestre dels WebServices';
 $string['md5fingerprint'] = 'empremta MD5: %s';
 $string['membersinvalidaction'] = 'L\'acció "%s" no és vàlida per l\'usuari "%s" al grup "%s"';
 $string['method'] = 'Mètode';
@@ -183,7 +178,6 @@ $string['phpparam'] = 'XML-RPC (PHP structure)';
 $string['potusers'] = 'No hi ha usuaris autoritzats';
 $string['print'] = 'Imprimeix tot';
 $string['protocol'] = 'Protocol';
-$string['protocolswitches'] = 'Protocols del commutador On/Off';
 $string['publickeyexpireson'] = 'La clau pública caduca: %s';
 $string['registeredemailmessagehtml'] = '<p>Hola %s,</p>
 <p>Gràcies per registrar-vos a %s. Si us plau, seguiu aquest enllaç per
@@ -223,7 +217,6 @@ $string['sauthtype'] = 'AuthType';
 $string['securitykey'] = 'Clau de seguretat (Testimoni)';
 $string['selectedcapability'] = 'Seleccionat';
 $string['selectspecificuser'] = 'seleccioneu un usuari específic';
-$string['serverkey'] = 'Clua del servidor: %s';
 $string['service'] = 'Servei';
 $string['serviceaccess'] = 'Accés al servei';
 $string['servicefunctiongroups'] = 'Gestiona grups de serveis';

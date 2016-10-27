@@ -41,11 +41,9 @@ $string['ntasks'] = array(
     1 => '%s tasques',
 );
 $string['overdue'] = 'Endarrerit';
-$string['plan'] = 'Pla';
 $string['plandeletedsuccessfully'] = 'S\'ha esborrat correctament el pla.';
 $string['plannotdeletedsuccessfully'] = 'S\'ha produït un error a l\'esborrar el pla.';
 $string['plannotsavedsuccessfully'] = 'S\'ha produït un error a l\'enviar el formulari. Comproveu el camps destacats i torneu-ho a provar.';
-$string['plans'] = 'Plans';
 $string['plansavedsuccessfully'] = 'S\'ha desat correctament el pla .';
 $string['planstasks'] = 'Tasques del pla \'%s\'';
 $string['planstasksdescription'] = 'Afegiu tasques a sota o bé utilitzeu el botó "% s" per començar a construir el vostre pla.';
