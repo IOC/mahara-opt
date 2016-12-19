@@ -20,6 +20,7 @@ $string['element.expiry.weeks'] = 'Setmanes';
 $string['element.expiry.years'] = 'Anys';
 $string['element.files.addattachment'] = 'Afegeix fitxer adjunt';
 $string['element.select.other'] = 'Altres';
+$string['requiredfields'] = 'Els camps marcats amb \'%s\' són obligatoris.';
 $string['rule.before.before'] = 'Això no pot ser després del camp "%s"';
 $string['rule.email.email'] = 'L\'adreça de correu no és vàlida';
 $string['rule.integer.integer'] = 'El camp ha de contenir un valor enter';

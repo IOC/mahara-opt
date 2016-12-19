@@ -7,6 +7,7 @@ $string['Annotationfeedback'] = 'Retroacció';
 $string['Annotations'] = 'Anotacions';
 $string['allowannotationfeedback'] = 'Peremt retroaccions';
 $string['annotation'] = 'anotació';
+$string['annotationfeedback'] = 'retroacció';
 $string['annotationfeedbackdeletedauthornotification'] = 'S\'ha esborrat la vostra retroacció a %s:
 %s';
 $string['annotationfeedbackdeletednotificationsubject'] = 'S\'ha esborrat la retroacció a %';
@@ -23,6 +24,7 @@ $string['annotationinformationerror'] = 'No tenim informació correcta per mostr
 $string['annotations'] = 'anotacions';
 $string['approvalrequired'] = 'Les retroaccions estan moderades. Si trieu de fer-les públiques, els altres no les veuran fins que les aprovi el propietari.';
 $string['artefactdefaultpermissions'] = 'Permisos per defecte de l\'anotació';
+$string['assessmentchangedto'] = 'Avaluació: %s';
 $string['cantedithasreplies'] = 'Només podeu editar les retroaccions més recents.';
 $string['canteditnotauthor'] = 'No sou l\'autor d\'aquesta retroacció';
 $string['cantedittooold'] = 'Només podeu editar retroacions fetes fa menys de %d minuts.';
@@ -50,10 +52,20 @@ $string['nannotationfeedback'] = array(
     1 => '%s retroaccions',
 );
 $string['newannotationfeedbacknotificationsubject'] = 'Retroacció nova a  %s';
+$string['nofeedback'] = 'Encara no hi ha cap retroacció per a aquesta anotació';
 $string['noreflectionentryfound'] = 'No es pot trobar l\'entrada de reflexió de l\'anotació';
+$string['placeannotation'] = 'Afegeix anotació';
 $string['placeannotationfeedback'] = 'Feu una retroacció';
 $string['pluginname'] = 'Anotació';
 $string['private'] = 'Privat';
+$string['progress_annotation'] = array(
+    0 => 'Afegeix 1 anotació a la pàgina',
+    1 => 'Afegeix %s anotacions a les pàgines',
+);
+$string['progress_annotationfeedback'] = array(
+    0 => 'Fes una retraocció a l\'anotació d\'un altre usuari.',
+    1 => 'Fes %s retraoccions a les anotacions d\'altres usuaris.',
+);
 $string['public'] = 'Públic';
 $string['reallydeletethisannotationfeedback'] = 'Esteu segur que voleu esborrar aquesta retroacció?';
 $string['typeannotationfeedback'] = 'Retroacció a les anotacions';

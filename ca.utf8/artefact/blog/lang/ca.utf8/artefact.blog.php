@@ -35,6 +35,8 @@ $string['blogtitledesc'] = 'p.ex, ‘Diari de pràctiques de Química Inorgànic
 $string['border'] = 'Vora';
 $string['bottom'] = 'A baix';
 $string['by'] = 'per';
+$string['bygroup'] = 'del grup <a href="%s">%s</a>';
+$string['byinstitution'] = 'de la institució <a href="%s">%s</a>';
 $string['cancel'] = 'Cancel·la';
 $string['cannotdeleteblogpost'] = 'S\'ha produït un error en esborrar l\'entrada del diari.';
 $string['copyfull'] = 'Altres usuaris podran fer la seva còpia del vostre %s';

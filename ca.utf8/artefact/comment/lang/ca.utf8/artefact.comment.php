@@ -99,6 +99,7 @@ $string['ratingexample'] = 'S\'ha generat un exemple';
 $string['ratingicons'] = 'Icona que s\'usarà per mostrar les valoracions';
 $string['ratinglength'] = 'Nombre d\'opcions de puntuació';
 $string['reallydeletethiscomment'] = 'Esteu segur que voleu esborrar aquest comentari?';
+$string['removerating'] = 'Elimina les qualificacions';
 $string['reply'] = 'Respon';
 $string['replyto'] = 'Respon a:';
 $string['replytonoaccess'] = 'No esteu autoritzat a donar resposta a aquest comentari.';
