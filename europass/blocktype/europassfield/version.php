@@ -2,17 +2,15 @@
 /**
  *
  * @package    mahara
- * @subpackage artefact-europass
+ * @subpackage blocktype-europassfield
  * @author     Gregor Anzelj
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright  (C) 2009-2015 Gregor Anzelj, gregor.anzelj@gmail.com
+ * @copyright  (C) 2009-2017 Gregor Anzelj, gregor.anzelj@gmail.com
  *
  */
 
 defined('INTERNAL') || die();
 
 $config = new StdClass;
-$config->version = 2012050900;
-$config->release = '2.0.4';
-
-?>
+$config->version = 2017020107;
+$config->release = '17.02.7';
