@@ -307,6 +307,13 @@ function xmldb_artefact_europass_upgrade($oldversion=0) {
         if (table_exists($table)) {
             drop_table($table);
         }
+
+        // Delete orphan references from view_artefact
+        execute_sql("DELETE va.*
+                    FROM {artefact} a
+                    JOIN {view_artefact} va ON va.artefact=a.id
+                    WHERE a.artefacttype = ?
+                    AND a.ctime < ?", array('mothertongue', $current));
         // Delete all old 'mothertongue' artefacts
         delete_records_select('artefact', 'artefacttype = ? AND ctime < ?', array('mothertongue', $current));
 
@@ -336,6 +343,7 @@ function xmldb_artefact_europass_upgrade($oldversion=0) {
         $ids = get_column('artefact_europass_certificate', 'artefact');
         execute_sql("DELETE FROM {artefact_europass_certificate}");
         if (!empty($ids)) {
+            execute_sql("DELETE FROM {view_artefact} WHERE artefact IN (" . join(',', $ids) . ")");
             execute_sql("DELETE FROM {artefact} WHERE id IN (" . join(',', $ids) . ")");
         }
 
@@ -344,6 +352,7 @@ function xmldb_artefact_europass_upgrade($oldversion=0) {
         $ids = get_column('artefact_europass_languageexperience', 'artefact');
         execute_sql("DELETE FROM {artefact_europass_languageexperience}");
         if (!empty($ids)) {
+            execute_sql("DELETE FROM {view_artefact} WHERE artefact IN (" . join(',', $ids) . ")");
             execute_sql("DELETE FROM {artefact} WHERE id IN (" . join(',', $ids) . ")");
         }
 
@@ -351,6 +360,7 @@ function xmldb_artefact_europass_upgrade($oldversion=0) {
         $ids = get_column('artefact', 'id', 'artefacttype', 'otherlanguage');
         execute_sql("DELETE FROM {artefact_europass_otherlanguage}");
         if (!empty($ids)) {
+            execute_sql("DELETE FROM {view_artefact} WHERE artefact IN (" . join(',', $ids) . ")");
             execute_sql("DELETE FROM {artefact} WHERE id IN (" . join(',', $ids) . ")");
         }
 
