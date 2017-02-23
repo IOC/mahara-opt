@@ -1386,48 +1386,51 @@ function get_print_preferences($doctypes=array('ecv'), $dateformat='numeric/long
 
         $artefactids = get_column_sql("SELECT id FROM {artefact} WHERE artefacttype='otherlanguage' AND owner=$userid");
         $idstr = join(',', array_map('intval', $artefactids));
+        $languages = array();
         if (!empty($artefactids)) {
             $languages = get_records_select_array('artefact_europass_otherlanguage', 'artefact IN (' . $idstr . ')');
         }
         // Add language certificate and experience count for each language
         $i = 0;
-        foreach ($languages as $lang) {
-            $cert = count_records_select('artefact', 'artefacttype=\'languagediploma\' AND parent=?', array($lang->artefact));
-            $xper = count_records_select('artefact', 'artefacttype=\'languageexperience\' AND parent=?', array($lang->artefact));
+        if (!empty($languages)) {
+            foreach ($languages as $lang) {
+                $cert = count_records_select('artefact', 'artefacttype=\'languagediploma\' AND parent=?', array($lang->artefact));
+                $xper = count_records_select('artefact', 'artefacttype=\'languageexperience\' AND parent=?', array($lang->artefact));
 
-            if ($cert > 0) {
-                for ($j = 0; $j < $cert; $j++) {
+                if ($cert > 0) {
+                    for ($j = 0; $j < $cert; $j++) {
+                        $return['ELP'][] = array(
+                            'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Certificate[' . $j . '].Date',
+                            'show' => true,
+                            'format' => $dateformat,
+                        );
+                    }
+                } else {
                     $return['ELP'][] = array(
-                        'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Certificate[' . $j . '].Date',
-                        'show' => true,
+                        'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Certificate[0].Date',
+                        'show' => false,
                         'format' => $dateformat,
                     );
                 }
-            } else {
-                $return['ELP'][] = array(
-                    'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Certificate[0].Date',
-                    'show' => false,
-                    'format' => $dateformat,
-                );
-            }
 
-            if ($xper > 0) {
-                for ($j = 0; $j < $xper; $j++) {
+                if ($xper > 0) {
+                    for ($j = 0; $j < $xper; $j++) {
+                        $return['ELP'][] = array(
+                            'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Experience[' . $j . '].Period',
+                            'show' => true,
+                            'format' => $dateformat,
+                        );
+                    }
+                } else {
                     $return['ELP'][] = array(
-                        'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Experience[' . $j . '].Period',
-                        'show' => true,
+                        'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Experience[0].Period',
+                        'show' => false,
                         'format' => $dateformat,
                     );
                 }
-            } else {
-                $return['ELP'][] = array(
-                    'name' => 'LearnerInfo.Skills.Linguistic.ForeignLanguage[' . $i . '].Experience[0].Period',
-                    'show' => false,
-                    'format' => $dateformat,
-                );
-            }
 
-            $i++;
+                $i++;
+            }
         }
     }
 
@@ -1745,24 +1748,25 @@ function get_mother_tongues($export=false, $lang=null, $userid=null) {
     }
 
     $data = array();
-    $data = get_records_select_array('artefact', 'artefacttype=? AND owner=?', array('mothertongue', $userid));
-    // Add translated language name for each mother tongue
-    foreach ($data as $language) {
-        $language->label = get_string_from_language($lang, 'language.' . $language->description, 'artefact.europass');
-    }
-
-    if (!$export) {
-        return $data;
-    }
-
-
     $return = array();
-    foreach ($data as $language) {
-        $return[] = array(
-            'Description' => array(
-                'Code' => strtolower($language->description)
-            ),
-        );
+    if ($data = get_records_select_array('artefact', 'artefacttype=? AND owner=?', array('mothertongue', $userid))) {
+        // Add translated language name for each mother tongue
+        foreach ($data as $language) {
+            $language->label = get_string_from_language($lang, 'language.' . $language->description, 'artefact.europass');
+        }
+
+        if (!$export) {
+            return $data;
+        }
+
+
+        foreach ($data as $language) {
+            $return[] = array(
+                'Description' => array(
+                    'Code' => strtolower($language->description)
+                ),
+            );
+        }
     }
 
     return $return;
@@ -1960,13 +1964,15 @@ function get_personal_skills($export=false, $userid=null) {
             $data['skills'][$skill]['id'] = 0;
             $data['skills'][$skill]['type'] = $skill;
             $data['skills'][$skill]['desc'] = '';
+            if ($skill == 'drivinglicence') {
+                $data['skills'][$skill]['licences'] = array();
+            }
         }
     }
 
     if (!$export) {
         return $data;
     }
-
 
     $return = array(
         'Linguistic' => array(
@@ -2034,8 +2040,8 @@ function generate_europass_html($doctypes=array('ecv'), $options=array(), $useri
         $userid = $USER->get('id');
     }
 
-    $lang = (!empty($options['lang']) ? $options['lang'] : 'en.utf8');
-    $embed = (!empty($options['embed']) ? $options['embed'] : true);
+    $lang = (isset($options['lang']) ? $options['lang'] : 'en.utf8');
+    $embed = (isset($options['embed']) ? $options['embed'] : true);
     $profilepic = (!empty($options['profilepic']) ? $options['profilepic'] : false);
 
     $labels = array(
