@@ -179,6 +179,7 @@ $string['projects'] = 'Proyectos';
 $string['memberships'] = 'Pertenencia grupos/asociaciones';
 $string['seminars'] = 'Seminarios';
 $string['conferences'] = 'Conferencias';
+$string['workshops'] = 'Talleres';
 $string['references'] = 'Referencias';
 $string['courses'] = 'Cursos';
 $string['certifications'] = 'Certificaciones';

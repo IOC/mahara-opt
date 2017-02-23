@@ -178,6 +178,7 @@ $string['projects'] = 'Projectes';
 $string['memberships'] = 'Pertinença grups/associacions';
 $string['seminars'] = 'Seminaris';
 $string['conferences'] = 'Conferències';
+$string['workshops'] = 'Tallers';
 $string['references'] = 'Referències';
 $string['courses'] = 'Cursos';
 $string['certifications'] = 'Certificacions';
