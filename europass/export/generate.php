@@ -35,43 +35,44 @@ if ($locale <> '' and $documenttype <> '' and $fileformat <> '' and $dateformat 
         $attachments = array();
         if ($parent = get_field('artefact', 'id', 'artefacttype', 'folder', 'note', 'skillsfolder', 'owner', $userid)) {
             $skillsfolder = new ArtefactTypeFolder($parent);
-            $files = $skillsfolder->folder_contents();
-            foreach ($files as $f) {
-                $details = array();
-                if ($f->artefacttype == 'image') {
-                    $att = get_record_sql('
-                        SELECT f.filetype, i.width, i.height
-                        FROM {artefact_file_files} f
-                        LEFT OUTER JOIN {artefact_file_image} i ON f.artefact = i.artefact
-                        WHERE f.artefact = ?', array($f->id));
-                } else {
-                    $att = get_record_sql('
-                        SELECT f.filetype
-                        FROM {artefact_file_files} f
-                        WHERE f.artefact = ?', array($f->id));
-                }
-                $size = get_imagesize_parameters();
-                $file = artefact_instance_from_id($f->id);
-                $path = $file->get_path($size);
-                $data = file_get_contents($path);
-                // Add file reference
-                $references[] = array(
-                    'idref' => 'ATT_MAHARA_' . $file->get('id'),
-                );
-                // Add file details
-                $item = array(
-                    'Id' => 'ATT_MAHARA_' . $file->get('id'),
-                    'Name' => $file->get('title'),
-                    'MimeType' => $att->filetype,
-                    'Data' => base64_encode($data), // base-64 encoded image/file
-                );
-                if ($f->artefacttype == 'image') {
-                    $item['Metadata'][] = array(
-                        'Key' => 'dimension',
-                        'Value' => $att->width . 'x' . $att->height,
+            if ($files = $skillsfolder->folder_contents()) {
+                foreach ($files as $f) {
+                    $details = array();
+                    if ($f->artefacttype == 'image') {
+                        $att = get_record_sql('
+                            SELECT f.filetype, i.width, i.height
+                            FROM {artefact_file_files} f
+                            LEFT OUTER JOIN {artefact_file_image} i ON f.artefact = i.artefact
+                            WHERE f.artefact = ?', array($f->id));
+                    } else {
+                        $att = get_record_sql('
+                            SELECT f.filetype
+                            FROM {artefact_file_files} f
+                            WHERE f.artefact = ?', array($f->id));
+                    }
+                    $size = get_imagesize_parameters();
+                    $file = artefact_instance_from_id($f->id);
+                    $path = $file->get_path($size);
+                    $data = file_get_contents($path);
+                    // Add file reference
+                    $references[] = array(
+                        'idref' => 'ATT_MAHARA_' . $file->get('id'),
                     );
+                    // Add file details
+                    $item = array(
+                        'Id' => 'ATT_MAHARA_' . $file->get('id'),
+                        'Name' => $file->get('title'),
+                        'MimeType' => $att->filetype,
+                        'Data' => base64_encode($data), // base-64 encoded image/file
+                    );
+                    if ($f->artefacttype == 'image') {
+                        $item['Metadata'][] = array(
+                            'Key' => 'dimension',
+                            'Value' => $att->width . 'x' . $att->height,
+                        );
+                    }
+                    $attachments[] = $item;
                 }
-                $attachments[] = $item;
             }
         }
     }
