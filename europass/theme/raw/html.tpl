@@ -4,6 +4,7 @@
 <head>
   <title>Europass portfolio</title>
   <link rel="shortcut icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.ico" />
+  <meta charset="UTF-8">
   <meta name="author" content="{$profilefields.firstname} {$profilefields.lastname}">
   <meta name="description" content="Europass portfolio dinamically created from Mahara e-portfolio service.">
   <meta name="generator" content="Mahara">
@@ -440,7 +441,7 @@ a:active, a:hover { color: #333; text-decoration: underline; }
       <div class="langtable-c30"><span class="marker small">{$text.period}</span></div>
     </div>
     {foreach from=$lang->experience item=exp}<div class="langtable-row">
-      <div class="langtable-c70">{$exp->description}</div>
+      <div class="langtable-c70">{$exp->experience}</div>
       <div class="langtable-c30">{$exp->startdate|format_date:'strfdaymonthyearshort'}{if $exp->enddate} - {$exp->enddate|format_date:'strfdaymonthyearshort'}{/if}</div>
     </div>{/foreach}{/if}
   </td>
