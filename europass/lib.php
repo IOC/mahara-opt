@@ -2001,7 +2001,7 @@ function get_additional_information($export=false, $lang=null, $userid=null) {
     }
 
     $data = array();
-    $data = get_records_select_array('artefact', "artefacttype=?", array('additionalinfo'));
+    $data = get_records_select_array('artefact', "artefacttype=? AND owner=?", array('additionalinfo', $userid));
     if ($data) {
         // Add translated labels for each additional information
         foreach ($data as $item) {
