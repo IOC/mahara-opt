@@ -20,6 +20,7 @@ $string['pbapiprivatekey'] = 'Clau privada Photobucket API (Photobucket API priv
 $string['pbsettings'] = 'Configuració de Photobucket';
 $string['photobucketphotosandalbums'] = 'Fotos i àlbums de l\'usuari de Photobucket';
 $string['photoframe'] = 'Voleu posar un marc a la foto?';
+$string['photoframedesc2'] = 'Mostra un marc al voltant de la miniatura de cada foto de la galeria';
 $string['picasaalbums'] = 'Àlbums de Picassa';
 $string['previewwidth'] = 'Amplada màxima de la foto';
 $string['previewwidthdesc'] = 'Configureu l\'amplada màxima a la que s\'escalaran les fotos quan es vegin a Slimbox2.';

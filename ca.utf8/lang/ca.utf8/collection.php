@@ -101,6 +101,4 @@ $string['viewsaddedtocollection1different'] = array(
 );
 $string['viewsincollection'] = 'Les pàgines ja són a la col·lecció';
 $string['viewstobeadded'] = 'Pàgines per afegir';
-$string['youhavecollections'] = 'Teniu %s col·leccions.';
 $string['youhavenocollections'] = 'No teniu cap col·leccció';
-$string['youhaveonecollection'] = 'Teniu 1 col·lecció.';

@@ -7,3 +7,4 @@ $string['itemstoshow'] = 'Entrades per mostrar';
 $string['postedin'] = 'en';
 $string['postedon'] = 'a';
 $string['title'] = 'Darreres entrades al diari';
+$string['updatedon'] = 'Darrera actualització';

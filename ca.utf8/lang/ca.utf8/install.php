@@ -84,8 +84,6 @@ $string['privacydefaultcontent'] = '<h2>Privacy Statement</h2>
 <h3>Contact</h3>
 
 <p>If you have any questions regarding this Statement or believe we have not adhered to the above criteria, please <a href="contact.php">Contact Us</a> and we will use all reasonable efforts to remedy the issue.</p>';
-$string['staticpageconfigdefault'] = '"Pàgines estàtiques" a "Configuració del lloc" a "Administració"';
-$string['staticpageconfiginstitution'] = '"Pàgines estàtiques" a "Institucions" a "Administració"';
 $string['termsandconditionsdefaultcontent'] = '<h2>Terms and Conditions</h2>
 
 <p>By using [Mahara] you are agreeing to the Terms and Conditions given below.</p>

@@ -7,6 +7,7 @@ $string['Annotationfeedback'] = 'Retroacció';
 $string['Annotations'] = 'Anotacions';
 $string['allowannotationfeedback'] = 'Peremt retroaccions';
 $string['annotation'] = 'anotació';
+$string['annotationempty'] = 'Aquest camp és obligatori';
 $string['annotationfeedback'] = 'retroacció';
 $string['annotationfeedbackdeletedauthornotification'] = 'S\'ha esborrat la vostra retroacció a %s:
 %s';
@@ -39,6 +40,7 @@ $string['enteredon'] = 'entrat a';
 $string['entriesimportedfromleapexport'] = 'Entrades importades d\'una exportació en format LEAP, que no van poder ser importats en un altre lloc';
 $string['existingannotation'] = 'Aquesta retroacció ja existeix';
 $string['existingannotationfeedback'] = 'Aquesta retroacció ja existeix';
+$string['groupadmins'] = 'Administradors del grup';
 $string['invalidannotationfeedbacklinkerror'] = 'La retroacció ha d\'estar enllaçada a un artefacte o a una pàgina';
 $string['invalidcreateannotationfeedback'] = 'No es pot crear una retroacció per si sola.';
 $string['makepublic'] = 'Fes públic';

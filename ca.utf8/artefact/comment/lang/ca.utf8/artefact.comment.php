@@ -74,9 +74,10 @@ Per veure i contestar aquest comentari seguiu aquest enllaç:
 %s';
 $string['forceprivatecomment'] = 'Privada: aquesta resposta només serà visible per a vós i per l\'autor del comentari precedent.';
 $string['forcepubliccomment'] = 'Públic';
+$string['groupadmins'] = 'Administradors del grup';
 $string['heart'] = 'Cor';
 $string['lastcomment'] = 'Últim comentari';
-$string['makepublic'] = 'Fes públic';
+$string['makecommentpublic'] = 'Feu públic el comentari';
 $string['makepublicnotallowed'] = 'No teniu permisos per fer públic aquest comentari';
 $string['makepublicrequestbyauthormessage'] = '%s ha sol·licitat que feu públic el seu comentari.';
 $string['makepublicrequestbyownermessage'] = '%s ha sol·licitat que feu públic el vostre comentari.';
@@ -84,7 +85,6 @@ $string['makepublicrequestsent'] = 'S\'ha enviat un missatge a %s per demanar-li
 $string['makepublicrequestsubject'] = 'Sol·licitud per canviar un comentari privat a públic';
 $string['messageempty'] = 'El missatge és buit i els missatges buits només són permesos si hi adjunteu un fitxer.';
 $string['moderatecomments'] = 'Modera comentaris';
-$string['moderatecommentsdescription1'] = 'Els comentaris sobre les pàgines restaran com a privats fins que els aproveu. Els comentaris sobre el contingut individual, com ara fitxers o entrades de Diari, resten exclosos d\'aquesta moderació.';
 $string['newcommentnotificationsubject'] = 'Comentari nou sobre %s';
 $string['ok'] = 'Marca';
 $string['pluginname'] = 'Comentari';

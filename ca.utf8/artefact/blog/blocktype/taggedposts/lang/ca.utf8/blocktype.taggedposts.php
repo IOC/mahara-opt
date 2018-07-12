@@ -33,3 +33,4 @@ $string['tag'] = 'Etiqueta';
 $string['taglist'] = 'Les meves etiquetes';
 $string['taglistdesc1'] = 'Escriviu un signe menys (-) abans del nom de l\'etiqueta que vulgueu excloure. Aquestes etiquetes es mostraran sobre un fons vermell.';
 $string['title'] = 'Entrades de Diari etiquetades';
+$string['updatedon'] = 'Darrera actualització';

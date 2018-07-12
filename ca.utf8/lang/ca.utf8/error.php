@@ -93,7 +93,6 @@ $string['unabletosetmultipleblogs'] = 'Ha fallat l\'activació de diferents diar
 $string['unknowndbtype'] = 'La configuració del servidor referència una tipus de base de dades desconegut. Els valors vàlids són: "postgres8" i "mysql5". Canvieu el tipus de BD al fitxer de configuració config.php.';
 $string['unrecoverableerror'] = 'S\'ha produït un error irrecuperable.  Això significa que probablement heu trobat un bug al sistema.';
 $string['unrecoverableerrortitle'] = '%s - No es pot trobar el lloc';
-$string['versionphpmissing'] = 'No es troba version.php al connector %s %s';
 $string['viewnotfound'] = 'No s\'ha trobat la vista id %s';
 $string['viewnotfoundbyname'] = 'No s\'ha trobat la pàgina %s de %s';
 $string['viewnotfoundexceptionmessage'] = 'Esteu provant d\'accedir a una vista que no existeix';

@@ -30,10 +30,6 @@ $string['emailalreadytakenbyothers'] = 'Aquesta adreça de correu ja ha estat ag
 $string['emailconfirmedok'] = '<p>Heu confirmat el correu de registre amb èxit. Molt aviat us notificarem més detalls del registre. </p>';
 $string['iagreetothetermsandconditions'] = 'Estic d\'acord amb els Termes i Condicions';
 $string['internal'] = 'Interna';
-$string['passwordformdescription'] = 'La vostra contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres.<br />
-Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
-$string['passwordinvalidform'] = 'La vostra contrasenya, com a mínim, ha de constar de sis caràcters i contenir, al menys, una xifra i dues lletres.<br />
-Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
 $string['pendingregistrationadminemailhtml'] = '<p>Benvolgut/da %s,</p>
 <p>Un usuari nou ha sol·licitat unir-se a la institució \'%s\'.</p>
 <p>Com que esteu a la llista d\'administradors d\'aquesta institució cal que aproveu o denegueu la sol·licitud. Per fer-ho seguiu l\'enllaç següent:  <a href=\'%s\'>%s</a></p>
@@ -65,7 +61,6 @@ Raó per registrar-se:
 --
 Salutacions,
 L\'equip %s';
-$string['recaptcharegisterdesc'] = 'Introduïu les paraules que veieu a la casella, en ordre i separades per un espai. Si ho feu així, ajudareu a evitar que programes automatitzats abusin d\'aquest servei.';
 $string['recaptcharegistertitle'] = 'Repte reCAPTCHA';
 $string['registeredemailmessagehtml'] = '<p>Hola %s,</p>
 <p>Gràcies per registrar-vos a %s. Si us plau, seguiu aquest enllaç per
@@ -111,7 +106,6 @@ $string['registrationreason'] = 'Motiu del registre';
 $string['registrationreasondesc1'] = 'La raó per la qual presenteu la sol·licitud d\'inscripció a la institució triada i qualsevol altre detall que considereu que pugui ser útil per l\'administrador en la tramitació de la vostra sol.licitud.';
 $string['registrationunsuccessful'] = 'Lamentablement el vostre intent de registre ha fallat a causa d\'un error al nostre sistema. Si us plau, proveu-ho més tard.';
 $string['title'] = 'Interna';
-$string['usernamealreadytaken'] = 'Aquest nom d\'usuari ja està en ús.';
 $string['usernameinvalidadminform'] = 'El nom d\'usuari pot contenir lletres, xifres i la majoria de símbols comuns i ha de tenir una longitud d\'entre 3 a 236 caràcters. No s\'hi poden posar espais en blanc.';
 $string['usernameinvalidform'] = 'El nom d\'usuari només pot contenir caràcters alfanumèrics, punts, barres baixes i símbols d\'arrova. A més, ha de tenir una longitud d\'entre 3 i 30 caràcters.';
 $string['youmaynotregisterwithouttandc'] = 'No us podeu registrar si no esteu d\'acord en acceptar els <a href="terms.php">Termes i Condicions</a>';

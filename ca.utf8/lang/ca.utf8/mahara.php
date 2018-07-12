@@ -88,46 +88,8 @@ Salutacions, %s Administrador del lloc';
 $string['accountdeleted'] = 'S\'ha eliminat el vostre compte';
 $string['accountexpired'] = 'El vostre compte ha caducat';
 $string['accountexpirywarning'] = 'Avís de venciment del compte';
-$string['accountexpirywarninghtml'] = '<p>Apreciat/da %s,</p>
-    
-<p>El vostre compte a  %s vencerà en %s.</p>
-
-<p>Us recomanem que deseu el contingut del vostre portafolis amb l\'ajut de l\'eina d\'Exportació. A la  Guia de l\'usuari  trobareu instruccions sobre com utilitzar-la.</p>
-
-<p>Si voleu allargar el vostre accés al compte o necessiteu algun aclariment sobre aquest missatge, <a href="%s">contacteu amb nosaltres </a>.</p>
-
-<p>Salutacions, %s Administrador del lloc</p>';
-$string['accountexpirywarningtext'] = 'Apreciat/da %s,
-
-El vostre compte a  %s vencerà en %s.
-
-Us recomanem que deseu el contingut del vostre eportafolis amb l\'ajut de l\'eina d\'Exportació. A la  Guia de l\'usuari  trobareu instruccions sobre com utilitzar-la.
-
-Si voleu allargar el vostre accés al compte o necessiteu algun aclariment sobre aquest missatge, contacteu amb nosaltres:
-
-%s
-
-Salutacions, %s Administrador del lloc';
 $string['accountinactive'] = 'Sorry, your account is currently inactive';
 $string['accountinactivewarning'] = 'Account inactivity warning';
-$string['accountinactivewarninghtml'] = '<p>Dear %s,</p>
-
-<p>Your account on %s will become inactive within %s.</p>
-
-<p>Once inactive, you will not be able to log in until an administrator re-enables your account.</p>
-
-<p>You can prevent your account from becoming inactive by logging in.</p>
-
-<p>Regards, %s Site Administrator</p>';
-$string['accountinactivewarningtext'] = 'Dear %s,
-
-Your account on %s will become inactive within %s.
-
-Once inactive, you will not be able to log in until an administrator re-enables your account.
-
-You can prevent your account from becoming inactive by logging in.
-
-Regards, %s Site Administrator';
 $string['accountprefs'] = 'Preferències';
 $string['accountsuspended'] = 'El vostre compte ha estat suspès a partir de %s a causa de:<blockquote>%s</blockquote>';
 $string['activityprefs'] = 'Preferències d\'activitat';
@@ -446,9 +408,6 @@ $string['dashboarddescription'] = 'La pàgina <strong>Consola</strong> és el pr
 $string['date'] = 'Data';
 $string['dateformatguide1'] = 'Usa el format %s';
 $string['dateofbirthformatguide1'] = 'Usa el  format %s';
-$string['datepicker_clearText'] = 'Esborra';
-$string['datepicker_closeStatus'] = 'Tenca sense fer cap canvi';
-$string['datepicker_closeText'] = 'Fet';
 $string['datetimeformatguide1'] = 'Usa el  format %s';
 $string['day'] = 'dia';
 $string['days'] = 'dies';
@@ -457,7 +416,6 @@ $string['decline'] = 'Declina';
 $string['default'] = 'Per defecte';
 $string['defaulthint'] = 'Escriviu el terme a cercar';
 $string['delete'] = 'Esborra';
-$string['deleteaccount'] = 'Elimina el compte de: %s / %s';
 $string['deleted'] = 'eliminat';
 $string['deleteduser'] = 'Usuari esborrat';
 $string['deleteitem'] = 'Elimina';
@@ -502,7 +460,6 @@ $string['filenotimage'] = 'El fitxer que heu pujat no és una imatge vàlida. Ha
 $string['fileunknowntype'] = 'No s\'ha pogut determinar el tipus de fitxer que heu carregat. Pot ser que estigui corrupte o bé que hi hagi un problema de configuració. Poseu-vos en contacte amb l\'administrador.';
 $string['filter'] = 'Filtre';
 $string['filterresultsby'] = 'Filtra els resultats per:';
-$string['findfriends'] = 'Cerca amics';
 $string['findgroups'] = 'Cerca grups';
 $string['first'] = 'Primera';
 $string['firstjoined'] = 'Primer en unir-s\'hi';
@@ -576,36 +533,6 @@ $string['installedplugins'] = 'Connectors Instal·lats';
 $string['institution'] = 'Institució';
 $string['institutioncontacts'] = '\'%s\' contactes';
 $string['institutionexpirywarning'] = 'Institution membership expiry warning';
-$string['institutionexpirywarninghtml_institution'] = '<p>Benvolgut/da %s,</p>
-
-<p>La pertinença a %s de %s caducarà en %s.</p>
-
-<p>Si voleu estendre la vostra pertinença a aquetsa institució o teniu qualsevol dubte sobre aquest tema, <a href="%s">poseu-vos en contacte amb nosaltres</a>.</p>
-
-<p>Salutacions, %s administrador del lloc</p>';
-$string['institutionexpirywarninghtml_site'] = '<p>Benvolgut/da %s,</p>
-
-<p>La institució \'%s\' caducarà en  %s.</p>
-
-<p>Podeu posar-vos en contacte amb ells per prolongar la vostra pertinença a  %s.</p>
-
-<p>Salutacions, %s administrador del lloc</p>';
-$string['institutionexpirywarningtext_institution'] = 'Benvolgut/da %s,
-
-La pertinença a %s de %s caducarà en %s.
-
-Si voleu estendre la vostra pertinença a aquetsa institució o teniu qualsevol dubte sobre aquest tema, poseu-vos en contacte amb nosaltres a:
-
-%s
-
-Salutacions, %s administrador del lloc';
-$string['institutionexpirywarningtext_site'] = 'Benvolgut/da %s,
-
-La institució \'%s\' caducarà en  %s.
-
-Si voleu estendre la vostra pertinença a %s cal que contacteu amb ells.
-
-Salutacions, %s Administrador del lloc';
 $string['institutionfull'] = 'La institució que heu triat no accepta més inscripcions.';
 $string['institutioninformation'] = 'Informació de la institució';
 $string['institutionlink'] = '<a href="%s">%s</a>';
@@ -616,22 +543,6 @@ $string['institutionmemberrejectsubject'] = 'S\'ha declinat la sol·licitud d\'i
 $string['institutionmembership'] = 'Pertinença a Institucions';
 $string['institutionmembershipdescription'] = 'Si pertanyeu a alguna institució, el nom apareixerà en la següent llista.';
 $string['institutionmembershipexpirywarning'] = 'Avís d\'expiració de la pertinença a una institució';
-$string['institutionmembershipexpirywarninghtml'] = '<p>Benvolgut/da %s,</p>
-
-<p>La vostra pertinença a  %s a %s expirarà en %s.</p>
-
-<p>Si voleu continuar-hi pertanyent o teniu algun dubte referent al tema <a href="%s">poseu-vos en contacte</a> amb nosaltres:</p>
-
-<p>Salutacions, %s administrador del lloc</p>';
-$string['institutionmembershipexpirywarningtext'] = 'Benvolgut/da %s,
-
-La vostra pertinença a  %s a %s expirarà en %s.
-
-Si voleu continuar-hi pertanyent o teniu algun dubte referent al tema poseu-vos en contacte amb nosaltres:
-
-%s
-
-Salutacions, %s administrador del lloc';
 $string['institutionmembershipfullmessagetext'] = 'Hola %s,
 
 S\'ha assolit el nombre màxim de membres  de membres de la institució %s a %s.
@@ -815,7 +726,6 @@ $string['orloginvia'] = 'O registreu-vos per:';
 $string['overview'] = 'Vista general';
 $string['password'] = 'Contrasenya';
 $string['passwordchangedok'] = 'S\'ha canviat correctament la contrasenya';
-$string['passworddescription'] = ' ';
 $string['passwordhelp'] = 'La contrasenya que useu normalment per entrar al sistema';
 $string['passwordnotchanged'] = 'No heu canviat la contrasenya, heu de triar-ne una de nova';
 $string['passwordsaved'] = 'S\'ha desat la nova contrasenya';
@@ -882,7 +792,6 @@ $string['reason'] = 'Raó';
 $string['register'] = 'Registra';
 $string['registeragreeterms'] = 'També heu d\'acceptar els <a href="terms.php">termes i condicions</a>.';
 $string['registeringdisallowed'] = 'Ara no us podeu registrar al sistema';
-$string['registerprivacy'] = 'Les dades que recollim es guardaran d\'acord a la nostra <a href="privacy.php">política de privacitat</a>.';
 $string['registerstep3fieldsmandatory'] = '<h3>Ompliu els camps obligatoris del perfil</h3><p>Els següents camps són obligatoris, els heu d\'omplir per poder completar el registre. </p>';
 $string['registerstep3fieldsoptional'] = '<h3>Trieu una imatge del perfil opcional</h3><p>Us heu registrat satisfactòriament amb %s. Ara podeu triar una imatge de perfil opcional que es mostrarà com el vostre avatar.</p>';
 $string['registerwelcome'] = 'Benvingut/da! Per gaudir d\'aquest lloc primer cal que us hi registreu.';
@@ -1002,6 +911,4 @@ $string['youraccounthasbeensuspendedreasontext'] = '%s ha suspès el vostre comp
 $string['youraccounthasbeensuspendedtext2'] = '%s ha suspès el vostre compte a %s.';
 $string['youraccounthasbeenunsuspended'] = 'S\'ha aixecat la suspensió del vostre compte';
 $string['youraccounthasbeenunsuspendedtext2'] = 'S\'ha aixecat la suspensió del vostre compte a %s. Ara podeu tornar a entrar al lloc i utilitzar-lo.';
-$string['yournewpassword'] = 'Contrasenya nova. La vostra contrasenya ha de tenir com a mínim 6 caràcters. Les contrasenyes distingeixen entre majúscules i minúscules i han de ser diferents del nom d\'usuari.<br />
-Per millorar la seguretat penseu en utilitzar una contrasenya llarga. consisteix en una frase més que no pas una paraula. Penseu en escriure la vostra cita preferida o una llista amb dos (o fins i tot més) de les vostres coses favorites, separades per espais.';
 $string['yournewpasswordagain'] = 'Repetiu la contrasenya nova';
